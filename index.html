@@ -210,7 +210,7 @@
 
           
           <li>
-            <a href="/archive/">Archives</a>
+            <a href="/categories/">Categories</a>
           </li>
           
           
@@ -224,7 +224,7 @@
 
           
           <li>
-            <a href="/categories/">Categories</a>
+            <a href="/archive/">Archives</a>
           </li>
           
           
@@ -387,29 +387,72 @@
   
 
 
-  <a href="/2020/04/17/Hexo-Theme-LiveMyLife/">
+  <a href="/2018/09/30/iOS-基础重谈-单例模式的正确写法/">
     <h2 class="post-title">
-      Hexo-Theme-LiveMyLife
+      iOS 基础重谈 - 单例模式的正确写法
     </h2>
     <h3 class="post-subtitle">
-      A succinct hexo theme...
+      
     </h3>
     <div class="post-content-preview">
-      
-Ported Theme of Hux Blog, Thank Huxpro for designing such a flawless theme.
-This LiveMyLife theme created by Vincent modified from the original Porter YenYuHsuan , refer to the Themes of dusign、Ut......
+      在iOS OC中，一般我们都是用官方推荐的写法来写单例：
+12345678+ (instancetype)sharedInstance &#123;    static URLManager * ins = nil;    static dispatch_once_t onceToken;    dispatch_once(&amp;onceToken, ^&#123;        ins......
     </div>
   </a>
   
   <p class="post-meta" style="margin: 10px 0;">
     Posted by 吉久东 on
-    2020-04-17
+    2018-09-30
   </p>
   <div class="tags">
     
-    <a href="/tags/#Hexo" title="Hexo">Hexo</a>
+    <a href="/tags/#iOS" title="iOS">iOS</a>
     
-    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife">Hexo-Theme-LiveMyLife</a>
+    <a href="/tags/#Objective-C" title="Objective-C">Objective-C</a>
+    
+  </div>
+  
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+  
+  <!-- top start (article top hot config) -->
+  
+  <!-- top end -->
+  
+
+
+  <a href="/2020/01/21/git使用/">
+    <h2 class="post-title">
+      git使用.md
+    </h2>
+    <h3 class="post-subtitle">
+      
+    </h3>
+    <div class="post-content-preview">
+      git是一个开源的分布式版本控制系统,用于敏捷高效地处理项目.
+安装
+可以从Git官网现在安装程序, 然后默认选项安装即可.
+
+安装成功后, 在开始菜单找到Git Bash, 跳出命令窗口说明安装成功.
+
+进行git设置
+
+git config --global user.name &quot;yourName&quot;
+git config --global user.email ema......
+    </div>
+  </a>
+  
+  <p class="post-meta" style="margin: 10px 0;">
+    Posted by 吉久东 on
+    2020-01-21
+  </p>
+  <div class="tags">
+    
+    <a href="/tags/#git" title="git">git</a>
     
   </div>
   
@@ -434,15 +477,14 @@ This LiveMyLife theme created by Vincent modified from the original Porter YenYu
       
     </h3>
     <div class="post-content-preview">
-      [toc]
-ES2015(ES6) 新增加了两个重要的 JavaScript 关键字: let 和 const。
+      ES2015(ES6) 新增加了两个重要的 JavaScript 关键字: let 和 const。
 
 let 声明的变量只在 let 命令所在的代码块内有效。
 const 声明一个只读的常量，一旦声明，常量的值就不能改变。
 
 let
 代码块内有效。let 是在代码块内有效，var 是在全局范围内有效。
-123456&#123;  let a = 0;  var b = 1;&#......
+123456&#123;  let a = 0;  var b = 1;&#125;a ......
     </div>
   </a>
   
@@ -561,12 +603,16 @@ let
 <div class="widget">
   <ul>
     
-    <a href="2020/04/17/Hexo-Theme-LiveMyLife/">
-      <li>Hexo-Theme-LiveMyLife</li>
+    <a href="2020/01/21/git%E4%BD%BF%E7%94%A8/">
+      <li>git使用.md</li>
     </a>
     
     <a href="2019/05/14/ES6%20-%20let%20%E4%B8%8E%20const/">
       <li>ES6 - let 与 const</li>
+    </a>
+    
+    <a href="2018/09/30/iOS-%E5%9F%BA%E7%A1%80%E9%87%8D%E8%B0%88-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%86%99%E6%B3%95/">
+      <li>iOS 基础重谈 - 单例模式的正确写法</li>
     </a>
     
   </ul>
@@ -582,8 +628,16 @@ let
 <div class="widget">
   <ul>
     
-    <a href="/categories/#Hexo-Theme-LiveMyLife">
-      <li>Hexo-Theme-LiveMyLife</li>
+    <a href="/categories/#ES6">
+      <li>ES6</li>
+    </a>
+    
+    <a href="/categories/#git">
+      <li>git</li>
+    </a>
+    
+    <a href="/categories/#iOS">
+      <li>iOS</li>
     </a>
     
   </ul>

@@ -71,12 +71,12 @@
 
   <!-- Pygments Highlight CSS -->
   
-<link rel="stylesheet" href="css/highlight.css">
-<link rel="stylesheet" href="css/widget.css">
-<link rel="stylesheet" href="css/rocket.css">
-<link rel="stylesheet" href="css/signature.css">
-<link rel="stylesheet" href="css/catalog.css">
-<link rel="stylesheet" href="css/livemylife.css">
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
 
 
   
@@ -138,10 +138,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://yoursite-url/404.html">
+  <link rel="canonical" href="http://yoursite-url/2020/01/21/git使用/">
   <title>
     
-    either thin | or die
+    git使用.md - either thin | or die
     
   </title>
 <meta name="generator" content="Hexo 4.2.1"></head>
@@ -289,8 +289,8 @@
 
   <style type="text/css">
     header.intro-header {
-       /*page*/
-        background-image: url('/img/header_img/404_bg.jpg');
+       /*post*/
+        background-image: url('');
       
     }
 
@@ -305,6 +305,74 @@
 
 
 
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#git" title="git">git</a>
+              
+            </div>
+            <h1>git使用.md</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by 吉久东 on
+              2020-01-21
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">6</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">1.7k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
 
 
 	<!-- Main Content (Post contains
@@ -318,25 +386,386 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-	
-<!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/header_img/404_bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>404</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">I&#39;m sorry there is nothing that you want , but you can enjoy the scenery here ...</span>
-                </div>
-            </div>
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <p>git是一个开源的分布式版本控制系统,用于敏捷高效地处理项目.</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><ul>
+<li><p>可以从Git官网现在安装程序, 然后默认选项安装即可.</p>
+</li>
+<li><p>安装成功后, 在开始菜单找到<code>Git Bash</code>, 跳出命令窗口说明安装成功.</p>
+</li>
+<li><p>进行git设置</p>
+<ul>
+<li><code>git config --global user.name &quot;yourName&quot;</code></li>
+<li><code>git config --global user.email email@example.com</code></li>
+</ul>
+</li>
+<li><p>查看设置的user信息</p>
+<ul>
+<li><code>git config user.name</code></li>
+<li><code>git config user.email</code></li>
+</ul>
+</li>
+<li><p>执行 <code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;</code> ,一直回车, 生成ssh key</p>
+</li>
+</ul>
+<blockquote>
+<p>注意:</p>
+<ol>
+<li><p>git config命令用了–global参数, 标识这台机器上的所有git仓库都使用这个配置; 当然也可以对仓库指定不同的用户名和emai地址.</p>
+</li>
+<li><p>设置ssh时, 一直默认回车就好, 不用设置ssh的密码, 否则每次提交都要输入ssh的密码.</p>
+</li>
+</ol>
+</blockquote>
+<ul>
+<li><p>找到生成的ssh(默认是id_rsa.pub文件), 复制秘钥后添加到代码托管平台.</p>
+<ul>
+<li><p>mac 下查看</p>
+<p><code>cd ~/.ssh</code></p>
+<p><code>cat id_rsa.pub</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="拉取远程代码"><a href="#拉取远程代码" class="headerlink" title="拉取远程代码"></a>拉取远程代码</h2><p><code>git clone 仓库地址</code> , 完成后cd到仓库目录</p>
+<p><code>git branch -a</code> , 可以查看所有分支</p>
+<p><code>git checkout 目标分支</code> , 检出目标分支</p>
+<p>如果要新建本地分支拉取, <code>git checkout -b 新分支名</code> 拉取到本地新分支上, 再 <code>git pull origin 分支</code> 将本地分支与远程分支关联.</p>
+<p>查看是否关联: <code>git branch -vv</code> , 看到有蓝色<code>[origin/分支]</code> , 说明关联成功, 以后直接 <code>git pull</code> 就可以拉取远程更新了.</p>
+<h2 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h2><p>首先我们先默认项目中有两个分支：master，develop。我们在develop中做开发，然后提交代码，步骤如下：</p>
+<ol>
+<li>查看当前分支的修改或增加文件(可省略)</li>
+</ol>
+<p><code>git status</code></p>
+<p><code>git diff</code> 查看变更.</p>
+<ol start="2">
+<li>把修改文件添加到暂存区，<code>-u</code>的意思是追踪过的代码，可根据情况省略，<code>.</code>是全部</li>
+</ol>
+<p><code>git add .</code> 或 <code>git add -u .</code></p>
+<ol start="3">
+<li>把暂存区的所有内容提交到当前分支</li>
+</ol>
+<p>提交的同时输入日志 <code>git commit -m &quot;日志&quot;</code> .</p>
+<p>或者 <code>git commit</code> , 然后使用vim编辑.</p>
+<blockquote>
+<p><code>git commit</code> 后面的操作步骤</p>
+<p>1 按下小写字母i，会进入编辑模式。输入你想要的 message</p>
+<p>2 按下esc退出编辑模式</p>
+<p>3 输入:wq，就可以保存退出了，w是write，q是quit。</p>
+<p>4也可以在按esc退出编辑模式以后，切换到大写模式，连按两下Z</p>
+</blockquote>
+<ol start="4">
+<li>push到远程分支，develop分支提交完成。</li>
+</ol>
+<p><code>git push</code> 或 <code>git push origin develop</code> 或 <code>git push -u origin develop</code></p>
+<h2 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h2><h3 id="方法一-git-merge-合并"><a href="#方法一-git-merge-合并" class="headerlink" title="方法一: git merge 合并"></a>方法一: <code>git merge</code> 合并</h3><p>将develop分支合并到master，步骤如下：</p>
+<ol>
+<li><p>查看所有本地分支（可省略）</p>
+<p><code>git branch</code></p>
+</li>
+<li><p>切换到master分支</p>
+<p><code>git checkout master</code></p>
+</li>
+<li><p>拉取</p>
+<p><code>git pull</code></p>
+</li>
+<li><p>合并分支，merge将后面的分支合并到当前分支</p>
+<p><code>git merge develop</code></p>
+</li>
+<li><p>若没有冲突，跳过此步；若有冲突，解决后add，再commit</p>
+<p><code>git add .
+git commit -m &quot;update&quot;</code></p>
+</li>
+<li><p>push到远程master分支上</p>
+<p><code>git push</code> 或 <code>git push -u origin master</code></p>
+</li>
+</ol>
+<p>合并完毕。</p>
+<p>最后记得切回develop分支 <code>git checkout develop</code> 继续开发。</p>
+<h3 id="方法二-git-rebaseh-衍合"><a href="#方法二-git-rebaseh-衍合" class="headerlink" title="方法二: git rebaseh 衍合"></a>方法二: <code>git rebaseh</code> 衍合</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">git checkout dev1</span><br><span class="line"><span class="meta">#</span><span class="bash"> 新增/修改了代码</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m "提交信息"</span><br><span class="line">git checkout develop</span><br><span class="line">git pull</span><br><span class="line">git checkout dev1</span><br><span class="line">git rebase develop</span><br><span class="line">等待, 有冲突解决冲突</span><br><span class="line">git add .</span><br><span class="line">git rebase --continue</span><br><span class="line">等待rebase结束</span><br><span class="line">git commit -m "提交信息"</span><br><span class="line">git push</span><br><span class="line">然后master合入develop</span><br></pre></td></tr></table></figure>
+
+<p>rebase 基于当前分支，拉取目标分支的commit，再将当前的commit放在目标分支的commit之后</p>
+<h2 id="重置-撤销"><a href="#重置-撤销" class="headerlink" title="重置/撤销"></a>重置/撤销</h2><p><a href="https://www.cnblogs.com/panbingwen/p/10736938.html" target="_blank" rel="noopener">参考:https://www.cnblogs.com/panbingwen/p/10736938.html</a></p>
+<p>Git 保存的不是文件的变化或者差异，而是一系列不同时刻的文件快照。</p>
+<p><code>git reset</code>命令是git中重置命令，即用来撤销某次提交(commit)。</p>
+<p>1、修改本地仓库中commit对象(快照)</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh95mwg0vaj30jr0h0dg9.jpg" alt="img"></p>
+<p>此时本地仓库对应的是commit4，git reset 可以让本地仓库对应的指针变为commit3或是commit1等之前的版本，当然，也可以变为commit4之后的某个commit，如commit5。</p>
+<blockquote>
+<p>Git 的分支，其实本质上仅仅是指向提交对象的可变指针。</p>
+<p>当使用git reset命令时候，一般会修改本地仓库。</p>
+</blockquote>
+<p>其常用格式如下：</p>
+<figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">用法一：git reset [-q] [] [--] ...</span><br><span class="line">用法二：git reset [--soft | --mixed | --hard | --merge | --keep ] [-q] [commit]</span><br></pre></td></tr></table></figure>
+
+<p>参数说明 (<code>git log</code>和<code>git reflog</code>可查看commitId，commitId是快照的唯一标识)</p>
+<blockquote>
+<p><code>git log --pretty=oneline -2</code> 查看最近2次提交记录,显示commitId,一条记录在一行中显示</p>
+</blockquote>
+<ul>
+<li><code>--hard commitId</code> 修改本地仓库、暂存区、工作区里面的数据为commitId对应快照的内数据</li>
+</ul>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh95muo7kxj30yg0fi3zx.jpg" alt=""></p>
+<ul>
+<li><p><code>--mixed commitId</code> 修改本地仓库、暂存区里面的数据为commitId对应快照里的数据，是git reset默认的参数，–mixed可缺省。 暂存区的数据会被快照中的数据覆盖</p>
+</li>
+<li><p><code>--soft commitId</code> 修改本地仓库里面的数据为commitId对应快照的数据。(仅改变指向快照的指针指向)</p>
+</li>
+</ul>
+<p><strong>当git reset 后面的commitId为当前提交的commitId时，即HEAD(可缺省)。那么：</strong></p>
+<p>参数说明：</p>
+<p><code>--hard HEAD</code> 修改暂存区、工作区里面的内容为当前快照里的内容。（这个很危险，曾经踩过坑，电脑的文件丢失了很多，也是导致我决心好好学一学git的原因，慎用）<br><code>--mixed HEAD</code> 修改暂存区里面的内容为当前快照里的内容，是git reset默认的参数，因此可缺省。<br><code>--soft HEAD</code> 本地仓库、暂存区、工作区都不改变 |</p>
+<p>我们需要注意，使用git reset重置一般是很危险的，会彻底地丢掉历史。因为如果没有记录下重置前的commitId，一般不容易找回，除非分析.git/logs里面的日志，故重置需慎重。</p>
+<h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2><h3 id="删除本地分支"><a href="#删除本地分支" class="headerlink" title="删除本地分支"></a>删除本地分支</h3><p><code>git branch -D feature-dev1</code></p>
+<h3 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h3><p>切换到别的分支后再删除目标分支：</p>
+<p><code>git push origin --delete feature-dev2</code></p>
+<h3 id="删除远程分支同步到本地"><a href="#删除远程分支同步到本地" class="headerlink" title="删除远程分支同步到本地"></a>删除远程分支同步到本地</h3><p>使用 <code>git branch -a</code> 可以查看本地分支和远程分支情况</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh95mvef64j30aa06zjrc.jpg" alt=""></p>
+<p>但远程分支删除后，发现本地并没有同步过来。</p>
+<p><code>git remote show origin</code> 查看本地分支和追踪情况</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh95mxa7iij30i209ymxt.jpg" alt=""></p>
+<p>上图红框中的分支是远程分支已被删除的分支，根据提示可以使用 <code>git remote prune origin</code> 来同步删除这些分支。</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh95msx7hnj30am03umx4.jpg" alt=""></p>
+<p>再次查看分支：</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh95mto246j309b04mdfp.jpg" alt=""></p>
+<p>红色部分的远程分支已经同步，远程删除的分支，本地也已经不见了。</p>
+<h2 id="查看提交日志"><a href="#查看提交日志" class="headerlink" title="查看提交日志"></a>查看提交日志</h2><p>下面的命令都可用于查看提交记录：</p>
+<p><code>git log</code></p>
+<p>一次提交记录以一行显示：</p>
+<p><code>git log --oneline</code></p>
+<p><code>git log --oneline -10</code> 显示10条（短ID显示）</p>
+<p><code>git log --pretty-oneline -20</code> 显示20条（全ID显示）</p>
+<h2 id="检出新分支"><a href="#检出新分支" class="headerlink" title="检出新分支"></a>检出新分支</h2><p>检出远程分支dev到本地分支dev3</p>
+<p><code>git checkout -b dev3 origin/dev</code></p>
+<p>从 4afde9 节点处检出新的本地分支dev4</p>
+<p><code>git checkout -b dev4 4afde9</code></p>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          
+          <li class="next">
+            <a href="/2019/05/14/ES6 - let 与 const/" data-toggle="tooltip" data-placement="top" title="ES6 - let 与 const">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
         </div>
-    </div>
-</header>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=git使用.md&body=Hi,I found this website and thought you might like it http://yoursite-url/2020/01/21/git使用/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+<!-- gitalk start -->
+<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+<div id="gitalk-container"></div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+<script src="/js/comment/gitalk.js"></script>
 
 <script>
-    document.body.classList.add('page-fullscreen');
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: '',
+    id: 'Tue Jan 21 2020 18:02:01 GMT+0800', // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    perPage: 10 ,
+    pagerDirection: 'last',
+    createIssueManually: false ,
+    language: 'en'
+  });
+  gitalk.render('gitalk-container');
+
+  var gtFolded = () => {
+    setTimeout(function() {
+      let markdownBody = document.getElementsByClassName("markdown-body");
+      let list = Array.from(markdownBody);
+      list.forEach(item => {
+        if (item.clientHeight > 250) {
+          item.classList.add('gt-comment-body-folded');
+          item.style.maxHeight = '250px';
+          item.title = 'Click to Expand';
+          item.onclick = function() {
+            item.classList.remove('gt-comment-body-folded');
+            item.style.maxHeight = '';
+            item.title = '';
+            item.onclick = null;
+          };
+        }
+      })
+    }, 800);
+  }
 </script>
+
+<!-- gitalk end -->
+
+
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#安装"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">安装</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#使用"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">使用</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#拉取远程代码"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">拉取远程代码</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#提交"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">提交</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#合并"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">合并</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#方法一-git-merge-合并"><span class="toc-nav-number">2.3.1.</span> <span class="toc-nav-text">方法一: git merge 合并</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#方法二-git-rebaseh-衍合"><span class="toc-nav-number">2.3.2.</span> <span class="toc-nav-text">方法二: git rebaseh 衍合</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#重置-撤销"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">重置&#x2F;撤销</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#删除分支"><span class="toc-nav-number">2.5.</span> <span class="toc-nav-text">删除分支</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#删除本地分支"><span class="toc-nav-number">2.5.1.</span> <span class="toc-nav-text">删除本地分支</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#删除远程分支"><span class="toc-nav-number">2.5.2.</span> <span class="toc-nav-text">删除远程分支</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#删除远程分支同步到本地"><span class="toc-nav-number">2.5.3.</span> <span class="toc-nav-text">删除远程分支同步到本地</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#查看提交日志"><span class="toc-nav-number">2.6.</span> <span class="toc-nav-text">查看提交日志</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#检出新分支"><span class="toc-nav-number">2.7.</span> <span class="toc-nav-text">检出新分支</span></a></li></ol></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#git" title="git">git</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 	<!-- Footer (contains ThemeColor、viewer) -->

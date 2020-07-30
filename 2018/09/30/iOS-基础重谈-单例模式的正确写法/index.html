@@ -71,12 +71,12 @@
 
   <!-- Pygments Highlight CSS -->
   
-<link rel="stylesheet" href="../../css/highlight.css">
-<link rel="stylesheet" href="../../css/widget.css">
-<link rel="stylesheet" href="../../css/rocket.css">
-<link rel="stylesheet" href="../../css/signature.css">
-<link rel="stylesheet" href="../../css/catalog.css">
-<link rel="stylesheet" href="../../css/livemylife.css">
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
 
 
   
@@ -138,10 +138,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://yoursite-url/categories/Hexo-Theme-LiveMyLife/">
+  <link rel="canonical" href="http://yoursite-url/2018/09/30/iOS-基础重谈-单例模式的正确写法/">
   <title>
     
-    either thin | or die
+    iOS 基础重谈 - 单例模式的正确写法 - either thin | or die
     
   </title>
 <meta name="generator" content="Hexo 4.2.1"></head>
@@ -210,7 +210,7 @@
 
           
           <li>
-            <a href="/archive/">Archives</a>
+            <a href="/categories/">Categories</a>
           </li>
           
           
@@ -224,7 +224,7 @@
 
           
           <li>
-            <a href="/categories/">Categories</a>
+            <a href="/archive/">Archives</a>
           </li>
           
           
@@ -289,8 +289,8 @@
 
   <style type="text/css">
     header.intro-header {
-       /*page*/
-        background-image: url('/img/header_img/archive_bg2.jpg');
+       /*post*/
+        background-image: url('');
       
     }
 
@@ -312,10 +312,42 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>吉久东的博客</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">静心思考，洞悉本质。</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#iOS" title="iOS">iOS</a>
+              
+              <a class="tag" href="/tags/#Objective-C" title="Objective-C">Objective-C</a>
+              
+            </div>
+            <h1>iOS 基础重谈 - 单例模式的正确写法</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by 吉久东 on
+              2018-09-30
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">1</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">460</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
           </div>
           
         </div>
@@ -356,216 +388,249 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-	<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+        <p>在iOS OC中，一般我们都是用官方推荐的写法来写单例：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">+ (<span class="keyword">instancetype</span>)sharedInstance &#123;</span><br><span class="line">    <span class="keyword">static</span> URLManager * ins = <span class="literal">nil</span>;</span><br><span class="line">    <span class="keyword">static</span> <span class="built_in">dispatch_once_t</span> onceToken;</span><br><span class="line">    <span class="built_in">dispatch_once</span>(&amp;onceToken, ^&#123;</span><br><span class="line">        ins = [[URLManager alloc] init];</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> ins;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-      
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
-      <!-- 归档列表 -->
-
-      
-
-      <!-- 归档列表 -->
-
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2020">
-          <span class="tag-text">2020</span>
-        </span>
-        <ul>
-          
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            04-17
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2020/04/17/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
-              <span>
-                Hexo-Theme-LiveMyLife
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
-          
-        </ul>
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2019">
-          <span class="tag-text">2019</span>
-        </span>
-        <ul>
-          
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            05-14
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/2019/05/14/ES6 - let 与 const/" style="color: #0085a1">
-              <span>
-                ES6 - let 与 const
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
-          
-        </ul>
-      </div>
-      
-
-
-    </div>
-  </div>
-</div>
-
-
-      <!-- 如果开启评论功能 -->
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        
-<!-- <h5>VISITORS</h5> -->
-<h5><a href="/">VISITORS</a></h5>
-<div class="widget">
-  <span>
-    Viewed <b><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times
-  </span>
-  <br />
-  <span>
-    <b><i><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Visitors In Total
-  </span>
-</div>
+<p>URLManager* a = [URLManager sharedInstance];<br>接下来，可以用 a 这个单例来干很多事情了，看起来没有问题。在很多实际的项目中，很多人也的确是这么做的。</p>
+<p>可是，谁能保证所有人都会使用 sharedInstance 方法来创建对象？而一旦有人用 alloc，new 等来创建对象，这就不是单例了。<br>例如：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">URLManager* a = [URLManager sharedInstance];</span><br><span class="line">URLManager* b = [[URLManager alloc] init];</span><br><span class="line">URLManager* c = [URLManager new];</span><br></pre></td></tr></table></figure>
+<p>查看 a、b、c ：<br><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh95gyzibnj30ei03cwev.jpg" alt="image"><br>可以看到，<strong><em>a、b、c 不是同一个对象，而所谓单例，就是不管我用何种方法创建对象，都必须是同一个</em></strong>。<br>所以，单例模式，绝不是一个 sharedInstance 就够了。</p>
+<p><strong>解决方案 一</strong>、<br>那么如何避免这种问题呢？我们知道：<br>在对象创建的时候，无论是 alloc 还是 new，都会调用到 allocWithZone: 方法；<br>使用拷贝创建对象时，会调用 copyWithZone:，mutableCopyWithZone:方法；<br>那么，重写这些方法，就可以让创建的对象唯一。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">+ (<span class="keyword">instancetype</span>)sharedInstance &#123;</span><br><span class="line">    <span class="keyword">static</span> URLManager * ins = <span class="literal">nil</span>;</span><br><span class="line">    <span class="keyword">static</span> <span class="built_in">dispatch_once_t</span> onceToken;</span><br><span class="line">    <span class="built_in">dispatch_once</span>(&amp;onceToken, ^&#123;</span><br><span class="line">        ins = [[<span class="keyword">super</span> allocWithZone:<span class="literal">nil</span>] init];</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> ins;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+(<span class="keyword">id</span>)allocWithZone:(<span class="built_in">NSZone</span> *)zone&#123;</span><br><span class="line">    <span class="keyword">return</span> [<span class="keyword">self</span> sharedInstance];</span><br><span class="line">&#125;</span><br><span class="line">-(<span class="keyword">id</span>)copyWithZone:(<span class="built_in">NSZone</span> *)zone&#123;</span><br><span class="line">    <span class="keyword">return</span> [[<span class="keyword">self</span> <span class="keyword">class</span>] sharedInstance];</span><br><span class="line">&#125;</span><br><span class="line">-(<span class="keyword">id</span>)mutableCopyWithZone:(<span class="built_in">NSZone</span> *)zone&#123;</span><br><span class="line">    <span class="keyword">return</span> [[<span class="keyword">self</span> <span class="keyword">class</span>] sharedInstance];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>再运行，看一看a、b、c：<br><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh95gyly6cj30dm0300t3.jpg" alt="image"><br>都是同一个对象！大功告成！</p>
+<p><strong>解决方案 二</strong>、<br>此外，还有一种方法，就是直接禁用掉 alloc、new 、copy等方法：</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">+(<span class="keyword">instancetype</span>) alloc __attribute__((unavailable(<span class="string">"replace with 'sharedInstance'"</span>)));</span><br><span class="line"></span><br><span class="line">+(<span class="keyword">instancetype</span>) new __attribute__((unavailable(<span class="string">"replace with 'sharedInstance'"</span>)));</span><br><span class="line"></span><br><span class="line">-(<span class="keyword">instancetype</span>) <span class="keyword">copy</span> __attribute__((unavailable(<span class="string">"replace with 'sharedInstance'"</span>)));</span><br><span class="line"></span><br><span class="line">-(<span class="keyword">instancetype</span>) mutableCopy __attribute__((unavailable(<span class="string">"replace with 'sharedInstance'"</span>)));</span><br></pre></td></tr></table></figure>
+<p>如此，在调用这些方法时就会报错，提示使用 sharedInstance 方法：<br><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh95gzxzsaj30yg02ddgk.jpg" alt="image"><br>以此，也可以达到单例模式的要求，始终只有一个对象。</p>
 
 
         <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/about/">ABOUT ME</a></h5>
-  <div class="short-about">
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2019/05/14/ES6 - let 与 const/" data-toggle="tooltip" data-placement="top" title="ES6 - let 与 const">&larr; Previous Post</a>
+          </li>
+          
+          
+        </ul>
 
-    
-    <img id="avatar_pic" src="/img/avatar/it.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>求知若渴，虚心若愚。</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/jerodji">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <a target="_blank" href="http://weibo.com/吉久东">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
         
-<!-- <h5>RECENT POSTS</h5> -->
-<h5><a href="/">RECENT POSTS</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../../2020/04/17/Hexo-Theme-LiveMyLife/">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
-    <a href="../../2019/05/14/ES6%20-%20let%20%E4%B8%8E%20const/">
-      <li>ES6 - let 与 const</li>
-    </a>
-    
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=iOS 基础重谈 - 单例模式的正确写法&body=Hi,I found this website and thought you might like it http://yoursite-url/2018/09/30/iOS-基础重谈-单例模式的正确写法/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
   </ul>
 </div>
 
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 
+        <!-- Sharing End -->
+        
         <hr>
-    
-        <!-- Categories -->
 
-<!-- <h5>categories</h5> -->
-<h5><a href="/categories/">CATEGORIES</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#Hexo-Theme-LiveMyLife">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
-  </ul>
-</div>
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+<!-- gitalk start -->
+<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+<div id="gitalk-container"></div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+<script src="/js/comment/gitalk.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: '',
+    id: 'Sun Sep 30 2018 17:55:22 GMT+0800', // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    perPage: 10 ,
+    pagerDirection: 'last',
+    createIssueManually: false ,
+    language: 'en'
+  });
+  gitalk.render('gitalk-container');
+
+  var gtFolded = () => {
+    setTimeout(function() {
+      let markdownBody = document.getElementsByClassName("markdown-body");
+      let list = Array.from(markdownBody);
+      list.forEach(item => {
+        if (item.clientHeight > 250) {
+          item.classList.add('gt-comment-body-folded');
+          item.style.maxHeight = '250px';
+          item.title = 'Click to Expand';
+          item.onclick = function() {
+            item.classList.remove('gt-comment-body-folded');
+            item.style.maxHeight = '';
+            item.title = '';
+            item.onclick = null;
+          };
+        }
+      })
+    }, 800);
+  }
+</script>
+
+<!-- gitalk end -->
 
 
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
         <hr>
-    
-</div>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
 
     
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="nav">none</ol>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#iOS" title="iOS">iOS</a>
+            
+            <a class="tag" href="/tags/#Objective-C" title="Objective-C">Objective-C</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 	<!-- Footer (contains ThemeColor、viewer) -->
