@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-xxxxxx-xx');
+  </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+  <script type="text/javascript">
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+
+  <!-- Baidu Push -->
+  
+  <script>
+    (function() {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc" />
+  <meta name="baidu-site-verification" content="PpzM9WxOJU" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="jerod blog" />
+  <meta name="keyword" content="jijiudong,jerod,jerodji,iOS,js,IT  blog,Blog" />
+  <link rel="shortcut icon" href="/img/avatar/roguerabbit.jpg" />
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/beantech.min.css" />
+
+  <!-- Pygments Highlight CSS -->
+  
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
+
+
+  
+  <!-- wave start -->
+  <link rel="stylesheet" href="/css/wave.css" />
+  <!-- wave end -->
+  
+
+  
+  <!-- top start (article top hot config) -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <!-- top end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+  <!-- viewer start (Picture preview) -->
+  <link rel="stylesheet" href="/css/viewer.min.css" />
+  <!-- viewer end -->
+  
+
+  
+  <!-- Search start -->
+  <link rel="stylesheet" href="/css/search.css" />
+  <!-- Search end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/themecolor.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+
+  
+  <!-- gitalk start -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+  <link rel="stylesheet" href="/css/gitalk.css" />
+  <!-- gitalk end -->
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2016/03/04/iOS用户信息安全：Keychain、Touch ID以及1Password/">
+  <title>
+    
+    iOS用户信息安全：Keychain、Touch ID以及1Password - either thin | or die
+    
+  </title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+<body ontouchstart="" class="body--home">
+	<!-- ThemeColor -->
+	
+	<!-- ThemeColor -->
+<!-- <div class="toggle" onclick="document.body.classList.toggle('body--dark')">Switch Color</div> -->
+
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons bright-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+
+	
+
+	<!-- Gitter -->
+	
+	<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+	
+
+	<!-- Navigation (contains search)-->
+	<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">吉久东的博客</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          
+
+          
+          
+
+          
+          <li>
+            <a href="/archive/">Archives</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/categories/">Categories</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/tags/">Tags</a>
+          </li>
+          
+          
+
+          
+          <li><a class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+
+<script>
+  // Drop Bootstarp low-performance Navbar
+  // Use customize navbar with high-quality material design animation
+  // in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+	<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    header.intro-header {
+       /*post*/
+        background-image: url('');
+      
+    }
+
+    
+      #signature {/*signature*/
+        background-image: url('/img/signature/jerod-white.png');
+      }
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#安全" title="安全">安全</a>
+              
+            </div>
+            <h1>iOS用户信息安全：Keychain、Touch ID以及1Password</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by 吉久东 on
+              2016-03-04
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">28</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">7.2k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+	<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <p>使用登录界面来保护APP用户数据是很好的方法–你可以使用Keychain（内嵌在iOS里的）来确保用户数据的安全。不过苹果现在使用Touch ID提供了另外一层保护，该功能适用于iPhone5、iPhone6、 iPhone 6+、iPad Air2以及iPad mini 3。</p>
+<p>如果这些都还不够，可以尝试iOS 8引入的扩展，你甚至可以使用AgileBits开发的1Password app来整合登录信息的存储和获取。这一切都要感谢AgileBits团队开发者开源了他们的扩展包。这样你就可以把管理登录信息的责任交给Keychain、TouchID或者1Password。</p>
+<p>在这个教程中，我们将使用Keychain 来存储和验证登录信息。之后，我们会学习Touch ID，最后将1Password 扩展集成到你的app中。</p>
+<p>注意：Touch ID和1Password要求在真机上测试，Keychain可以在模拟器上测试。</p>
+<p><strong>开始</strong></p>
+<p>请<a href="http://cdn2.raywenderlich.com/wp-content/uploads/2014/12/TouchMeInRev.starter.zip" target="_blank" rel="noopener">在此下载</a>该教程的初始工程文件。这是一个最基本的使用Core Data存储用户笔记的记笔APP；storyboard中包含一个登录界面，用户可输入用户名和密码，这个APP的其他界面已经都关联好了，而且可以直接使用。</p>
+<p>编译并运行工程，查看APP在当前状态下的展示情况：</p>
+<p>现在，点击Login按钮会关闭当前界面并展示笔记的列表-你也可以在该界面上创建一个新的笔记。点击Logout会带你返回到Login界面。如果这个APP处于后台，它会马上返回到login界面。这种方式保障了在没有登录的情况下是看不到任何数据的。将Info.plist里面的Application does not run in background设置为YES就可以达到这个效果。</p>
+<p>开始之前，更改Bundle Identifier，选择一个合适的Team。</p>
+<p>在工程导航器中选中TouchMeIn，然后选择TouchMeIn target。在General 标签中更改Bundle Identifier为你自己的域名-使用反向域名构造标识符规则-例如com.raywenderich.TouchMeIn.</p>
+<p>然后，如下，在Team菜单上选择你的开发团队相应的账户。</p>
+<p>所有配置齐全后，开始coding吧！:]</p>
+<p><strong>Logging? Log In.</strong></p>
+<p>话不多说，开始吧！现在你要增加功能来对照用户提供的验证信息和硬编码的值。</p>
+<p>打开LoginViewController.swift，在managedObjectContext变量声明的下方添加下面的常量：</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">usernameKey</span> = <span class="string">"batman"</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">passwordKey</span> = <span class="string">"Hello Bruce!"</span></span><br></pre></td></tr></table></figure>
+
+<p>以上是仅仅是硬编码用户名和密码，用来核对用户提供的验证信息。</p>
+<p>在loginAction(_:)下方添加以下函数：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">checkLogin</span><span class="params">(username: String, password: String )</span></span> -&gt; <span class="type">Bool</span> </span><br><span class="line">&#123;  </span><br><span class="line">   <span class="keyword">if</span> ((username == usernameKey) &amp;&amp; (password == passwordKey)) </span><br><span class="line">   &#123;    </span><br><span class="line">       <span class="keyword">return</span> <span class="literal">true</span>  </span><br><span class="line">   &#125; </span><br><span class="line">   <span class="keyword">else</span> </span><br><span class="line">   &#123;    </span><br><span class="line">       <span class="keyword">return</span> <span class="literal">false</span>  </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>该方法查看用户提供的验证信息与你提前定义的常亮是否匹配</p>
+<p>接下来，将loginAction(_:) 里的内容替换为如下内容：</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (check<span class="constructor">Login(<span class="params">self</span>.<span class="params">usernameTextField</span>.<span class="params">text</span>, <span class="params">password</span>: <span class="params">self</span>.<span class="params">passwordTextField</span>.<span class="params">text</span>)</span>) &#123;</span><br><span class="line">self.perform<span class="constructor">SegueWithIdentifier(<span class="string">"dismissLogin"</span>, <span class="params">sender</span>: <span class="params">self</span>)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>该方法调用了checkLogin(_:password:)方法，如果验证信息正确则收起登录界面。</p>
+<p>编译并运行程序，输入用户名batman和密码Hello Bruce!，点击Login按钮，登录界面应该按照预期被收起。</p>
+<p>尽管这个做法可以达到验证效果，但是非常不安全，因为以字符串形式保存验证信息能被训练有素的黑客使用正确的工具轻松获取。最好的策略是，永远不要将密码直接保存在app里。</p>
+<p>为此，你应该使用Keychain 来保存密码。查看Chris Lowe的<a href="http://www.raywenderlich.com/6475/basic-security-in-ios-5-tutorial-part-1" target="_blank" rel="noopener">Basic Security in iOS 5–Part 1</a>教程来学习Keychain 的实际工作原理。</p>
+<p>下一步将Keychain封装添加到你的APP。虽然它是用Objective-C写的，但也要添加一个bridging header头文件，以便从Swift中访问Objective-C类。</p>
+<p><strong>Rapper? No. Wrapper.</strong></p>
+<p>你可以<a href="http://cdn4.raywenderlich.com/wp-content/uploads/2014/12/KeychainWrapper.zip" target="_blank" rel="noopener">在此下载KeychainWrapper</a>，来自于苹果的<a href="https://developer.apple.com/library/ios/documentation/Security/Conceptual/keychainServConcepts/01introduction/introduction.html" target="_blank" rel="noopener">Keychain Services Programming Guide</a>.</p>
+<p>下载解压后，将KeychainWrapper.h 和 KeychainWrapper.m拖进你的工程里，如下所示：  </p>
+<p>在弹出窗口中，选中Copy items if needed 和TouchMeIn target。  </p>
+<p>在Swift工程中添加Objective-C文件，Xcode会为你创建一个桥接头文件-点击 Yes:  </p>
+<p>这时候创建了一个名为TouchMeIn-Bridging-Header.h的桥接头文件。将所有Objective-C文件的头文件添加到文件中，以便Swift工程可以访问得到。</p>
+<p>想要检查桥接头文件设置是否正确，在工程导航器中选择TouchMeIn。选中Build Settings，在搜索栏中输Swift Compiler,然后找到Objective-C Bridging Header栏，当前栏中包含TouchMeIn/TouchMeIn-Bridging-Header.h如下图所示：  </p>
+<p>提示：你可以在<a href="http://www.raywenderlich.com/89816/porting-app-iphone-6-iphone-6-plus-ios-8-top-10-tips" target="_blank" rel="noopener">Porting Your App to the iPhone 6, iPhone 6 Plus and iOS 8: Top 10 Tips</a>（中文译文）中了解更多关于桥接头文件的信息。想了解更多Swift和Objective-C混编的信息，可以查看苹果的<a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/index.html" target="_blank" rel="noopener">Using Swift with Cocoa and Objective-C</a>指南.</p>
+<p>打开TouchMeIn-Bridging-Header.h文件，在文件开头导入Keychain 封装包：</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#<span class="keyword">import</span> <span class="string">"KeychainWrapper.h"</span></span><br></pre></td></tr></table></figure>
+
+<p>编译并运行工程，以确保没有任何错误。一切正常？很好—现在你可以在APP中发挥Keychain的优势了。</p>
+<p>提示：如果工程中存在错误，请查看苹果的<a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/index.html" target="_blank" rel="noopener">Using Swift with Cocoa and Objective-C</a>指南来修复错误。</p>
+<p><strong>Keychain, Meet Password. Password, Meet Keychain</strong></p>
+<p>想使用Keychain,必须先保存一个用户名和密码。然后检查用户提供的验证信息和keychain里面保存的信息是否匹配。</p>
+<p>你应该追踪用户是否已经创建了验证信息，以便你可以把login按钮的展示文字从“Create”更改为“Login”。你也应该存储用户名到user defaults当中，以便检查验证信息是否创建，而不是每次都访问keychain。</p>
+<p>打开LoginViewController.swift文件然后删掉以下内容：</p>
+<p>let usernameKey = “batman”</p>
+<p>let passwordKey = “Hello Bruce!”</p>
+<p>在以上删除掉的地方添加下面的内容：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="type">MyKeychainWrapper</span> = <span class="type">KeychainWrapper</span>()</span><br><span class="line"><span class="keyword">let</span> createLoginButtonTag = <span class="number">0</span></span><br><span class="line"><span class="keyword">let</span> loginButtonTag = <span class="number">1</span></span><br><span class="line"><span class="meta">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> loginButton: <span class="type">UIButton!</span></span><br></pre></td></tr></table></figure>
+
+<p>MyKeychainWrapper保留了到Objective-C KeychainWrapper类的引用。接下来的两个常量会用来区分Login按钮到底是用来创建验证信息还是用来登录；根据前面的两个状态（创建或登录），LoginButton outlet用来更新login 按钮的展示文字。</p>
+<p>打开Main.storyboard，然后从Login View Controller里执行Ctrl-drag操作，拖拉到Login按钮，如图所示：</p>
+<p>在弹出框里选择loginButton</p>
+<p>接下来，当按钮被轻触时，你要处理两种可能情况：如果用户还没有创建过验证信息时，按钮文字应该展示“Create,否则按钮展示“Login”。你也需要检查输入的验证信息和keychain保存的信息是否匹配。</p>
+<p>打开LoginViewController.swift，将loginAction(_:) 里面的代码替换为如下内容：</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">@IBAction func login<span class="constructor">Action(<span class="params">sender</span>: AnyObject)</span> &#123;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 1.</span></span><br><span class="line">  <span class="keyword">if</span> (usernameTextField.text<span class="operator"> == </span><span class="string">""</span><span class="operator"> || </span>passwordTextField.text<span class="operator"> == </span><span class="string">""</span>) &#123;</span><br><span class="line">    var alert = <span class="constructor">UIAlertView()</span></span><br><span class="line">    alert.title = <span class="string">"You must enter both a username and password!"</span></span><br><span class="line">    alert.add<span class="constructor">ButtonWithTitle(<span class="string">"Oops!"</span>)</span></span><br><span class="line">    alert.show<span class="literal">()</span></span><br><span class="line">    return;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 2.</span></span><br><span class="line">  usernameTextField.resign<span class="constructor">FirstResponder()</span></span><br><span class="line">  passwordTextField.resign<span class="constructor">FirstResponder()</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 3.</span></span><br><span class="line">  <span class="keyword">if</span> sender.tag<span class="operator"> == </span>createLoginButtonTag &#123;</span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 4.</span></span><br><span class="line">    <span class="keyword">let</span> hasLoginKey = <span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.<span class="built_in">bool</span><span class="constructor">ForKey(<span class="string">"hasLoginKey"</span>)</span></span><br><span class="line">    <span class="keyword">if</span> hasLoginKey<span class="operator"> == </span><span class="literal">false</span> &#123;</span><br><span class="line">      <span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.set<span class="constructor">Value(<span class="params">self</span>.<span class="params">usernameTextField</span>.<span class="params">text</span>, <span class="params">forKey</span>: <span class="string">"username"</span>)</span></span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 5.</span></span><br><span class="line">    <span class="module-access"><span class="module"><span class="identifier">MyKeychainWrapper</span>.</span></span>my<span class="constructor">SetObject(<span class="params">passwordTextField</span>.<span class="params">text</span>, <span class="params">forKey</span>:<span class="params">kSecValueData</span>)</span></span><br><span class="line">    <span class="module-access"><span class="module"><span class="identifier">MyKeychainWrapper</span>.</span></span>write<span class="constructor">ToKeychain()</span></span><br><span class="line">    <span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.set<span class="constructor">Bool(<span class="params">true</span>, <span class="params">forKey</span>: <span class="string">"hasLoginKey"</span>)</span></span><br><span class="line">    <span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.synchronize<span class="literal">()</span></span><br><span class="line">    loginButton.tag = loginButtonTag</span><br><span class="line">  </span><br><span class="line">    perform<span class="constructor">SegueWithIdentifier(<span class="string">"dismissLogin"</span>, <span class="params">sender</span>: <span class="params">self</span>)</span></span><br><span class="line">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> sender.tag<span class="operator"> == </span>loginButtonTag &#123;</span><br><span class="line">    <span class="comment">// 6.</span></span><br><span class="line">    <span class="keyword">if</span> check<span class="constructor">Login(<span class="params">usernameTextField</span>.<span class="params">text</span>, <span class="params">password</span>: <span class="params">passwordTextField</span>.<span class="params">text</span>)</span> &#123;</span><br><span class="line">      perform<span class="constructor">SegueWithIdentifier(<span class="string">"dismissLogin"</span>, <span class="params">sender</span>: <span class="params">self</span>)</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="comment">// 7.</span></span><br><span class="line">      var alert = <span class="constructor">UIAlertView()</span></span><br><span class="line">      alert.title = <span class="string">"Login Problem"</span></span><br><span class="line">      alert.message = <span class="string">"Wrong username or password."</span></span><br><span class="line">      alert.add<span class="constructor">ButtonWithTitle(<span class="string">"Foiled Again!"</span>)</span></span><br><span class="line">      alert.show<span class="literal">()</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上述代码分析：</p>
+<p>代码里发生了如下步骤：</p>
+<ol>
+<li><p>如果用户名或密码为空，则弹出一个提示框并从该方法返回。</p>
+</li>
+<li><p>如果键盘可见则关闭它。</p>
+</li>
+<li><p>如果login 按钮的tag是createLoginButtonTag，则继续创建一个新的login。</p>
+</li>
+<li><p>接下来，从NSUserDefaults里读取hasLoginKey 的值，该值表明Keychain里面是否已经保存过了密码。如果username非空，而且hasLoginKey 表明没有保存过登录信息，则将username的值保存到NSUserDefaults。</p>
+</li>
+<li><p>然后使用mySetObject和writeToKeychain把密码的值保存在Keychain中。之后将NSUserDefaults里面hasLoginKey的值设置为true，用以表示密码已经被保存在了keychain当中了。设置login按钮的tag值为loginButtonTag ，这样用户下次开启你的APP时会自动弹出让用户登录的界面，而不是弹出让用户创建登录的界面。最后，关闭loginView。</p>
+</li>
+<li><p>如果用户是登录（如loginButtonTag表明），可调用checkLogin(_:password:)方法来验证用户提供的登录信息；如果验证信息是匹配的，则关闭登录界面。</p>
+</li>
+<li><p>如果验证失败，则弹出提示信息给用户。</p>
+</li>
+</ol>
+<p>注意：为什么不直接像用户名那样把密码直接保存在NSUserDefaults里面呢？因为直接保存后果很严重。因为NSUserDefaults是由plist文件存储的。Plist文件本质上就是一个在APP的Library文件夹下的一个XML文件 ，它可以被任何可直接接触到设备的任何人读取。另一方面，Keychain则是利用Triple Digital Encryption Standard (3DES) 来加密数据的。</p>
+<p>接下来，用以下内容替换checkLogin(_:password:)方法的实现：</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">func check<span class="constructor">Login(<span class="params">username</span>: String, <span class="params">password</span>: String )</span> -&gt; Bool &#123;</span><br><span class="line"><span class="keyword">if</span> password<span class="operator"> == </span><span class="module-access"><span class="module"><span class="identifier">MyKeychainWrapper</span>.</span></span>my<span class="constructor">ObjectForKey(<span class="string">"v_Data"</span>)</span> <span class="keyword">as</span> NSString &amp;&amp;</span><br><span class="line">username<span class="operator"> == </span><span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.value<span class="constructor">ForKey(<span class="string">"username"</span>)</span> <span class="keyword">as</span>? NSString &#123;</span><br><span class="line">return <span class="literal">true</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">return <span class="literal">false</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>改方法检查了用户名是否匹NSUserDefaults里储存的值，以及密码是否匹配Keychain里存的值。</p>
+<p>现在就需要根hasLoginKey的状态来设置正确的按钮展示文字以及tag。</p>
+<p>将以下内容添加到viewDidLoad()方法：</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1.</span></span><br><span class="line"><span class="keyword">let</span> hasLogin = <span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.<span class="built_in">bool</span><span class="constructor">ForKey(<span class="string">"hasLoginKey"</span>)</span></span><br><span class="line"><span class="comment">// 2.</span></span><br><span class="line"><span class="keyword">if</span> hasLogin &#123;</span><br><span class="line">loginButton.set<span class="constructor">Title(<span class="string">"Login"</span>, <span class="params">forState</span>: UIControlState.Normal)</span></span><br><span class="line">loginButton.tag = loginButtonTag</span><br><span class="line">createInfoLabel.hidden = <span class="literal">true</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">loginButton.set<span class="constructor">Title(<span class="string">"Create"</span>, <span class="params">forState</span>: UIControlState.Normal)</span></span><br><span class="line">loginButton.tag = createLoginButtonTag</span><br><span class="line">createInfoLabel.hidden = <span class="literal">false</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 3.</span></span><br><span class="line"><span class="keyword">let</span> storedUsername : NSString? = <span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.value<span class="constructor">ForKey(<span class="string">"username"</span>)</span> <span class="keyword">as</span>? NSString</span><br><span class="line">usernameTextField.text = storedUsername</span><br></pre></td></tr></table></figure>
+
+<p>代码解释如下：</p>
+<ol>
+<li><p>首先利用hasLoginKey的值来查看当前用户是否已经保存过登录信息。</p>
+</li>
+<li><p>如果保存过，把登录按钮的文字设为Login,更新按钮的tag值为loginButtonTag，并隐藏createInfoLabel–包含“Start by creating a username and password”文本。如果该用户没有保存过登录信息，则设置按钮文字为Create,且展示createInfoLabel。</p>
+</li>
+<li><p>最后，把用户名信息填入NSUserDefaults里以便用户更方便的进行登录操作 ?</p>
+</li>
+</ol>
+<p>编译并运行。输入一个你选择的用户名和密码，点击Create。</p>
+<p>注意：如果你忘记了把loginButton IBOutlet关联起来，则可能会看见“Fatal error: unexpectedly found nil while unwrapping an Optional value”。如果看见了这个错误信息，则照先前步骤提示将outlet关联起来。</p>
+<p>现在点击Logout，然后尝试用相同的用户名和密码进行登录-应该就能看到一串笔记列表。</p>
+<p>点击Logout再次登录，这次使用另外的一个密码，后点Login，你应该会看到如下的错误提示框：</p>
+<p>恭喜！你已经成功利用Keychain进行身份验证啦。下一步，挑战Touch ID吧！  </p>
+<p><strong>Touching You, Touching Me</strong></p>
+<p>注意：想要尝试Touch ID,你必须在一个支持Touch ID的真机上运行APP。目前为止，支持的设备有iPhone 5s/6/6+、iPad Air 2以及iPad mini 3。</p>
+<p>在这节中，除了使用Keychain外，你还要在工程中加入Touch ID。尽管Touch ID工作时并非一定要使用Keychain ，但保守起见最好还是实现一个备用的认证方法，例如Touch ID运行失败，或者用户手机不支持Touch ID。</p>
+<p>打开 Images.xcassets.</p>
+<p>在这里<a href="http://cdn5.raywenderlich.com/wp-content/uploads/2014/12/TouchMeIn-assets.zip" target="_blank" rel="noopener">下载</a>该工程将使用到的图片资源。解压并打开文件夹，找到Touch-icon-lg.png、<a href="mailto:Touch-icon-lg@2x.png">Touch-icon-lg@2x.png</a>和Touch-icon-lg@3x.png, 选中这三张图片然后拉到Images.xcassets下。对于Xcode，这三张图片是同一张图片，只是分辨率不同而已。</p>
+<p>打开Main.storyboard，然后从Object Library中拖一个按钮到Login View Controller Scene，位于标签下方。</p>
+<p>按照下面操作，使用Attributes Inspector来调节按钮的属性：</p>
+<ul>
+<li><p>将Type设置为Custom.</p>
+</li>
+<li><p>将Title设置为空.</p>
+</li>
+<li><p>将Image设置为Touch-icon-lg.</p>
+</li>
+</ul>
+<p>完成后，按钮的属性值应该如下图所示：</p>
+<p>按照如下值在Size Inspector中设置按钮：</p>
+<ul>
+<li><p>Show 设为 Frame Rectangle</p>
+</li>
+<li><p>X 设为 267</p>
+</li>
+<li><p>Y 设为 341</p>
+</li>
+<li><p>Width 设为 67</p>
+</li>
+<li><p>Height 设为 66</p>
+</li>
+</ul>
+<p>完成后，Size Inspector应该如下图：</p>
+<p>选中你创建的这个新按钮，点击storyboard画布下方的layout bar当中的pin按钮，按照如下信息设置约束条件：</p>
+<ul>
+<li><p>Top Space 设为 16.5</p>
+</li>
+<li><p>Width 设为 67</p>
+</li>
+<li><p>Height 设为 67</p>
+</li>
+</ul>
+<p>接下来，点击align 按钮并在Container中检查Horizontal Center。</p>
+<p>最后，点击Resolve Auto Layout Issues图标，选中Selected Views\Update Frames，如下所示：  </p>
+<p>这会更新按钮的frame以便匹配新的约束。  </p>
+<p>你的界面现在应该如下图：</p>
+<p>下一步，依然在Main.storyboard中，打开 Assistant Editor，确保已经展示LoginViewController.swift。</p>
+<p>按住Ctrl键把新建的按钮关联到LoginViewController.swift,放置在其他的属性下方，如下图：  </p>
+<p>在弹出框中将其命名为touchIDButton，然后点击Connect。</p>
+<p>当设备不支持Touch ID时，这会创建一个outlet用来隐藏这个按钮。</p>
+<p>现在给这个按钮加一个action。</p>
+<p>按住Ctrl键拖拽这个按钮到 LoginViewController.swift 里的checkLogin(_:password:)方法上方：</p>
+<p>在弹出框里，将Connection更改为Action，将其命名为touchIDLoginAction，然后点击Connect。</p>
+<p>编译并运行看是否存在错误。目前仍然可以选择模拟器运行，因为还没有加任何关于Touch ID的东西。但是下面就要开始引入了。</p>
+<p><strong>Adding Local Authentication</strong></p>
+<p>实现Touch ID就跟引入Local Authentication和调用一些便捷却强大的方法一样简单。</p>
+<p>以下是Local Authentication文档内容：</p>
+<p>“Local Authentication 框架提供了基于特定安全策略的向用户要求身份验证的工具。”</p>
+<p>这里提到的特定安全策略就是用户的生物识别信息，也就是用户的指纹。</p>
+<p>打开LoginViewController.swift，在CoreData import下加入下面的import</p>
+<figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> LocalAuthentication</span><br></pre></td></tr></table></figure>
+
+<p>现在需要一个指向LAContext 类的引用，还需要一个error属性。</p>
+<p>将以下代码加入所有属性的下方：</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">var</span> <span class="built_in">error</span> : NSError?</span><br><span class="line"><span class="built_in">var</span> <span class="built_in">context</span> = LAContext()</span><br></pre></td></tr></table></figure>
+
+<p>接下来在这个教程中，你将会用到error；context引用了一个验证上下文环境，也就是 Local Authentication中的主要元素。</p>
+<p>在viewDidLoad() 方法底部加入下面的代码：</p>
+<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">touchIDButton.hidden = <span class="keyword">true</span></span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">if</span> context.<span class="title">canEvaluatePolicy</span><span class="params">(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, <span class="keyword">error</span>: &amp;<span class="keyword">error</span>)</span> </span>&#123;</span><br><span class="line">  touchIDButton.hidden = <span class="keyword">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里你使用了canEvaluatePolicy(_:error:)方法来查看当前设备是否支 Touch ID 身份验证。如果支持，则显示 Touch ID 按钮；如果不支持，则隐藏按钮。</p>
+<p>在模拟器上编译运行示例工程，Touch ID按钮是隐藏的。在支持Touch ID的真机上运行，Touch ID按钮则会显示出来。</p>
+<p><strong>使用Touch ID</strong> </p>
+<p>还是在LoginViewController.swift中，用以下代码替换touchIDLoginAction(_:)方法里的内容：</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@IBAction</span> func touchIDLoginAction(<span class="string">sender:</span> AnyObject) &#123;</span><br><span class="line"><span class="comment">// 1.</span></span><br><span class="line"><span class="keyword">if</span> context.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, <span class="string">error:</span> &amp;error) &#123;</span><br><span class="line"><span class="comment">// 2.</span></span><br><span class="line">context.evaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, <span class="string">localizedReason:</span> <span class="string">"Logging in with Touch ID"</span>,</span><br><span class="line"><span class="string">reply:</span> &#123; (<span class="string">success:</span> Bool, <span class="string">error:</span> NSError! ) -&gt; Void <span class="keyword">in</span></span><br><span class="line"><span class="comment">// 3.</span></span><br><span class="line">dispatch_async(dispatch_get_main_queue(), &#123;</span><br><span class="line"><span class="keyword">if</span> success &#123;</span><br><span class="line">self.performSegueWithIdentifier(<span class="string">"dismissLogin"</span>, <span class="string">sender:</span> self)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> error != nil &#123;</span><br><span class="line">var <span class="string">message:</span> NSString</span><br><span class="line">var <span class="string">showAlert:</span> Bool</span><br><span class="line"><span class="comment">// 4.</span></span><br><span class="line"><span class="keyword">switch</span>(error.code) &#123;</span><br><span class="line"><span class="keyword">case</span> LAError.AuthenticationFailed.<span class="string">rawValue:</span></span><br><span class="line">message = <span class="string">"There was a problem verifying your identity."</span></span><br><span class="line">showAlert = <span class="literal">true</span></span><br><span class="line"><span class="keyword">case</span> LAError.UserCancel.<span class="string">rawValue:</span></span><br><span class="line">message = <span class="string">"You pressed cancel."</span></span><br><span class="line">showAlert = <span class="literal">true</span></span><br><span class="line"><span class="keyword">case</span> LAError.UserFallback.<span class="string">rawValue:</span></span><br><span class="line">message = <span class="string">"You pressed password."</span></span><br><span class="line">showAlert = <span class="literal">true</span></span><br><span class="line"><span class="string">default:</span></span><br><span class="line">showAlert = <span class="literal">true</span></span><br><span class="line">message = <span class="string">"Touch ID may not be configured"</span></span><br><span class="line">&#125;</span><br><span class="line">var alert = UIAlertView()</span><br><span class="line">alert.title = <span class="string">"Error"</span></span><br><span class="line">alert.message = message</span><br><span class="line">alert.addButtonWithTitle(<span class="string">"Darn!"</span>)</span><br><span class="line"><span class="keyword">if</span> showAlert &#123;</span><br><span class="line">alert.show()</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br><span class="line">&#125;)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line"><span class="comment">// 5.</span></span><br><span class="line">var alert = UIAlertView()</span><br><span class="line">alert.title = <span class="string">"Error"</span></span><br><span class="line">alert.message = <span class="string">"Touch ID not available"</span></span><br><span class="line">alert.addButtonWithTitle(<span class="string">"Darn!"</span>)</span><br><span class="line">alert.show()</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下是上面代码的解释：</p>
+<p>再一次使用canEvaluatePolicy(_:error:) 来检查当前设备是否支Touch ID。</p>
+<p>如果该设备支持Touch ID, 使用 evaluatePolicy(<em>:localizedReason:reply:) 方法来开始验—也就是让用户利用Touch ID进行身份验证。在验证执行完毕后，evaluatePolicy(</em>:localizedReason:reply:) takes一个reply block</p>
+<p>在reply block内部, 首先处理成功的情况。默认情况下, 验证方法在私有线程上运行，所以代码会跳到主线程以便更新UI。如果验证成功，则调用segue关闭登录界面。</p>
+<p>如果失败，用switch语句把每一个可能的失败条件列举出来，并设置相应的失败提示信息展示给用户。</p>
+<p>如果canEvaluatePolicy(_:error:)方法失败,则展示一个通用的提示框。实际应用中, 应该分析评估并解决返回的失败错误代码，错误码可能包含以下的信息：</p>
+<ul>
+<li><p>LAErrorTouchIDNotAvailable: 该设备不支持Touch ID。</p>
+</li>
+<li><p>LAErrorPasscodeNotSet:Touch ID要求的passcode没启用。 </p>
+</li>
+<li><p>LAErrorTouchIDNotEnrolled: 没有存储指纹信息。</p>
+</li>
+</ul>
+<p>iOS会对LAErrorPasscodeNotSet和LAErrorTouchIDNotEnrolled 做出自己相对应的警告提示框。</p>
+<p>在真机上编译运行，然后用Touch ID测试登录。</p>
+<p>因为LAContext 已经处理了大多数较难的部分，所以实现Touch ID其实是个相对简单的过程。好的地方是，你可以在一个APP里保留keychain和Touch ID两个验证方法以防用户的手机不支持Touch ID。</p>
+<p>在这个教程的第三部分也就是最后一个部分，我们将会使用1Password 的iOS 8扩展来存储并获得登录信息，以及其他的一些敏感的用户信息。</p>
+<p><strong>用1Password进行控制</strong></p>
+<p>Agilebits开发的<a href="https://agilebits.com/onepassword" target="_blank" rel="noopener">1Password</a>密码控制器可以在iOS、OS X、Windows以及Android上运行。它可以把登录验证信息，软件许可证和其他敏感信息存储在一个库里并且用一个<a href="http://en.wikipedia.org/wiki/PBKDF2" target="_blank" rel="noopener">PBKDF2</a>-加密的主秘钥进行锁定。在这一节中，你会学到怎么样利用扩展（extension）把用户验证信息存储在1Password里，然后学习怎样获取这些信息以便验证用户。</p>
+<p>注意：下面章节学习中，你需要在真机上安装1Password。</p>
+<p>首先，你需要加一些新的图片，将用于1Password按钮上。</p>
+<p>打开 Images.xcassets. 然后，在你先前下载的资源里，找到下面的三个文件：</p>
+<ul>
+<li><p>onepassword-button.png</p>
+</li>
+<li><p><a href="mailto:onepassword-button@2x.png">onepassword-button@2x.png</a></p>
+</li>
+<li><p><a href="mailto:onepassword-button@3x.png">onepassword-button@3x.png</a></p>
+</li>
+</ul>
+<p>选中所有，然后把三个当成一个整体拖入到 Images.xcassets. 然后，找到这三个文件：  </p>
+<ul>
+<li><p>onepassword-button-green.png</p>
+</li>
+<li><p><a href="mailto:onepassword-button-green@2x.png">onepassword-button-green@2x.png</a></p>
+</li>
+<li><p><a href="mailto:onepassword-button-green@3x.png">onepassword-button-green@3x.png</a></p>
+</li>
+</ul>
+<p>再次，选中所有，然后把三个当成一个整体拖入到 Images.xcassets.</p>
+<p>打开Main.storyboard，从Object Library里面拖一个按钮到Login View Controller Scene里，位于的Touch ID按钮下方。在Attributes Inspector里，调整这个按钮的属性为如下值：</p>
+<ul>
+<li><p>将Type设置为Custom</p>
+</li>
+<li><p>将Title设置为空</p>
+</li>
+<li><p>将Image设置为onepassword-button</p>
+</li>
+</ul>
+<p>Attributes Inspector应该如下图所示：</p>
+<p>使用Size Inspector调整放置信息和大小信息，如下值：</p>
+<ul>
+<li><p>将X设置为287</p>
+</li>
+<li><p>将Y设置为426</p>
+</li>
+<li><p>将Width设置为27</p>
+</li>
+<li><p>将Height设置为33</p>
+</li>
+</ul>
+<p>你可以比对下图来检查大小信息和位置信息是否设置正确：</p>
+<p>保持按钮仍然是被选中状态，点击storyboard下方layout条上pin，并且设置按钮的距离上部空间为21，宽度为27，高度为33：</p>
+<p>接下来，点击layout条中的align，并在Container里面勾选上Horizontal Center。</p>
+<p>还是在Main.storyboard里，打开 Assistant Editor，当下会自动打开LoginViewController.swift-如果没有打开，则在跳转栏中选中这个文件。现在按住Ctrl键把按钮拖向LoginViewController.swift中的其他属性下方，如下图所示：</p>
+<p>在弹出框里把名字设置为onepasswordSigninButton，点击Connect:</p>
+<p>这会创建一个IBOutlet，根据其功能是否可用，你将用它来更改1Password按钮的图片。</p>
+<p>接下来为onepasswordSigninButton添加一个action。按Ctrl健并把该按钮拖向LoginViewController.swift里的checkLogin(_:password:)方法上方。</p>
+<p>将Connection类型更改为Action。将名称设置为canUse1Password，且将Arguments设置为Sender，点击Connect。</p>
+<p>编译运行。如下图，你会看到一个新的1Password按钮展现出来，如下所示：</p>
+<p><strong>一个灵活的拓展</strong></p>
+<p>现在界面展示出来了，你可以开始实现1Password的支持了！</p>
+<p>如下展示的那样，找到GitHub上的1Password 扩展<a href="https://github.com/AgileBits/onepassword-app-extension" target="_blank" rel="noopener">仓库地址</a>，点击下载ZIP:</p>
+<p>解压下载下来的文件。打开文件夹并且把OnePasswordExtension.h和OnePasswordExtension.m文件拖到你的工程里，如下图：</p>
+<p>确保勾选Copy items if needed和TouchMeIn。</p>
+<p>回想当初添加Objective-C 文件到Swift工程里时，Xcode自动提供了一个bridging header头文件。鉴于最初时已经创建了这样的一个bridging header头文件，现在你可以直接将1Password的头加入那个文件中。</p>
+<p>打开TouchMeIn-Bridging-Header.h文件然后加入下面的import:</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#<span class="keyword">import</span> <span class="string">"OnePasswordExtension.h"</span></span><br></pre></td></tr></table></figure>
+
+<p>打开LoginViewController.swift然后加入下面import到文件的顶端：</p>
+<figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Security</span><br></pre></td></tr></table></figure>
+
+<p>这仅仅简单地导入了1Password 扩展需要的Security框架。</p>
+<p>现在将以下属性添加至LoginViewController的顶端：</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">MyOnePassword</span> = OnePasswordExtension()</span><br><span class="line">var has1PasswordLogin: <span class="attr">Bool</span> = <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>前一个属性保留了1Password扩展的主类的关联，后一个属性追踪了1Password记录是否被创建过；一开始设置默认为false因为在最开始运行时肯定没有创建过。</p>
+<p>接下来，使用以下代码更新viewDidLoad()里整个if halogen 块里的代码：</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> hasLogin &#123;</span><br><span class="line">loginButton.setTitle(<span class="string">"Login"</span>, forState: UIControlState.Normal)</span><br><span class="line">loginButton.<span class="attr">tag</span> = loginButtonTag</span><br><span class="line">createInfoLabel.<span class="attr">hidden</span> = <span class="literal">true</span></span><br><span class="line">onepasswordSigninButton.<span class="attr">enabled</span> = <span class="literal">true</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">loginButton.setTitle(<span class="string">"Create"</span>, forState: UIControlState.Normal)</span><br><span class="line">loginButton.<span class="attr">tag</span> = createLoginButtonTag</span><br><span class="line">createInfoLabel.<span class="attr">hidden</span> = <span class="literal">false</span></span><br><span class="line">onepasswordSigninButton.<span class="attr">enabled</span> = <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这使得onepasswordSigninButton在初始用户名和密码存储进Keychain之前是无效的。</p>
+<p>现在你需要进入1Password扩展里测试是否安装了这个iOS app以及其是否可用，如果是就启用1Password按钮。</p>
+<p>将以下代码加入viewDidLoad()方法:</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">onepasswordSigninButton.hidden = <span class="literal">true</span></span><br><span class="line">var has1Password = <span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.<span class="built_in">bool</span><span class="constructor">ForKey(<span class="string">"has1PassLogin"</span>)</span></span><br><span class="line"><span class="keyword">if</span> <span class="module-access"><span class="module"><span class="identifier">MyOnePassword</span>.</span></span>is<span class="constructor">AppExtensionAvailable()</span> &#123;</span><br><span class="line">onepasswordSigninButton.hidden = <span class="literal">false</span></span><br><span class="line"><span class="keyword">if</span> has1Password &#123;</span><br><span class="line">onepasswordSigninButton.set<span class="constructor">Image(UIImage(<span class="params">named</span>: <span class="string">"onepassword-button"</span>)</span> , forState: .Normal)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">onepasswordSigninButton.set<span class="constructor">Image(UIImage(<span class="params">named</span>: <span class="string">"onepassword-button-green"</span>)</span> , forState: .Normal)</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里默认是隐藏了onepasswordSigninButton，并且仅当扩展被安装后才显示它。接下来将NSUserDefaults里面key has1PassLogin的值赋值给has1Password来指明1Password记录是否被创建过。  </p>
+<p>接下来，当点1Password按钮时，更改canUse1Password以便向console输出一个简单的消息。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@IBAction</span> <span class="function"><span class="keyword">func</span> <span class="title">canUse1Password</span><span class="params">(sender: AnyObject)</span></span> &#123;</span><br><span class="line"><span class="built_in">println</span>(<span class="string">"one password"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在已安装1Password的模拟器和真机上编译和运行你的APP。1Password按钮应该在模拟器上是隐藏的，且在真机上该按钮应该显示为绿色。点击1Password按钮，以下信息将显示在console上：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">one password</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>深入1Password强大之处</strong></p>
+<p>1Password扩展里有一些方法你可以使用：</p>
+<p>storeLoginForURLString(<em>:loginDetails:passwordGenerationOptions:forViewController:sender:)方法让你创建一些登录验证信息，findLoginForURLString(</em>:forViewController:sender:completion:)方法能让你从1Password库里检索验证信息。</p>
+<p>打开LoginViewController.swift，并添加以下新方法：</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">func saveLoginTo1Password(<span class="string">sender:</span> AnyObject) &#123;</span><br><span class="line"><span class="comment">// 1.</span></span><br><span class="line">var <span class="string">newLoginDetails :</span> NSDictionary = [</span><br><span class="line"><span class="string">AppExtensionTitleKey:</span> <span class="string">"Touch Me In"</span>,</span><br><span class="line"><span class="string">AppExtensionUsernameKey:</span> usernameTextField.text,</span><br><span class="line"><span class="string">AppExtensionPasswordKey:</span> passwordTextField.text,</span><br><span class="line"><span class="string">AppExtensionNotesKey:</span> <span class="string">"Saved with the TouchMeIn app"</span>,</span><br><span class="line"><span class="string">AppExtensionSectionTitleKey:</span> <span class="string">"Touch Me In app"</span>,</span><br><span class="line">]</span><br><span class="line"><span class="comment">// 2.</span></span><br><span class="line">var <span class="string">passwordGenerationOptions :</span> NSDictionary = [</span><br><span class="line"><span class="string">AppExtensionGeneratedPasswordMinLengthKey:</span> <span class="number">6</span>,</span><br><span class="line"><span class="string">AppExtensionGeneratedPasswordMaxLengthKey:</span> <span class="number">10</span></span><br><span class="line">]</span><br><span class="line"><span class="comment">// 3.</span></span><br><span class="line">MyOnePassword.storeLoginForURLString(<span class="string">"TouchMeIn.Login"</span>, <span class="string">loginDetails:</span> newLoginDetails,</span><br><span class="line"><span class="string">passwordGenerationOptions:</span> passwordGenerationOptions, <span class="string">forViewController:</span> self, <span class="string">sender:</span> sender)</span><br><span class="line">&#123; (<span class="string">loginDict :</span> [<span class="string">NSObject :</span> AnyObject]!, <span class="string">error :</span> NSError!) -&gt; Void <span class="keyword">in</span></span><br><span class="line"><span class="comment">// 4.</span></span><br><span class="line"><span class="keyword">if</span> loginDict == nil &#123;</span><br><span class="line"><span class="keyword">if</span> ((Int32)(error.code) != AppExtensionErrorCodeCancelledByUser) &#123;</span><br><span class="line">println(<span class="string">"Error invoking 1Password App Extension for login: \(error)"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 5.</span></span><br><span class="line">var foundUsername = loginDict[<span class="string">"username"</span>] <span class="keyword">as</span> String</span><br><span class="line">var foundPassword = loginDict[<span class="string">"password"</span>] <span class="keyword">as</span> String</span><br><span class="line"><span class="comment">// 6.</span></span><br><span class="line"><span class="keyword">if</span> self.checkLogin(foundUsername, <span class="string">password:</span> foundPassword) &#123;</span><br><span class="line">self.performSegueWithIdentifier(<span class="string">"dismissLogin"</span>, <span class="string">sender:</span> self)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line"><span class="comment">// 7.</span></span><br><span class="line">var alert = UIAlertView()</span><br><span class="line">alert.title = <span class="string">"Error"</span></span><br><span class="line">alert.message = <span class="string">"The info in 1Password is incorrect"</span></span><br><span class="line">alert.addButtonWithTitle(<span class="string">"Darn!"</span>)</span><br><span class="line">alert.show()</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// TODO - add NSUserDefaults check</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以上是代码，下面是代码的细节：</p>
+<ul>
+<li><p>创建了一个包含用户提供的用户名和密码的dictionary，也包括1Password扩展需要的keys。当存储密码时，这个dictionary会被传递给扩展。</p>
+</li>
+<li><p>添加了1Password用来生成密码的可选的参数。这里只是简单地声明密码的最小和最大长度。如果不在这里配置的话，1Password扩展会提供默认的参数值。</p>
+</li>
+<li><p>你提供一个字符串–TouchMeIn.Login–来确定保存了的记录; 你也要传递newLoginDetails和passwordGenerationOptions，这是你在步骤1和步骤2创建的两个字典。</p>
+</li>
+<li><p>如果上述一切顺利，你会收到一个loginDict返回值。这个返回值包含了用户名和密码；如果没收到，你需要在console里打印一个错误然后return。</p>
+</li>
+<li><p>从loginDict 里提取出用户名和密码。</p>
+</li>
+<li><p>利用上一步中拿到的用户名和密码来调用 checkLogin(_:password:) 方法；如果验证信息跟存储在Keychain里的信息匹配则该用户登录成功且关闭login界面；</p>
+</li>
+<li><p>如果登录信息不正确，你展示一个带有错误信息的提示框。</p>
+</li>
+</ul>
+<p>注意：1Password使用一个字符串–URLString作为库里记录对应的key。你可以使用任何独一无二的字符串，尽管使用你的Bundle ID作为这个Key是很诱人的，但是你还是应该尽量创造一个唯一的可读性强的字符串来当做key，因为这个字符串在1Password app里是可见的。在你的案例中，你使用了TouchMeIn.Login这个字符串。</p>
+<p>现在你应该检查用户名是否被存入了NSUserDefaults。如果没有，你应该保守的编写代码，把text field里面的用户名值保存下来 ?</p>
+<p>在saveLoginTo1Password(_:)里找到下面的这行代码：</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// TODO - <span class="keyword">add</span><span class="bash"> NSUserDefaults check</span></span><br></pre></td></tr></table></figure>
+
+<p>然后用下面的代码替换它：</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.object<span class="constructor">ForKey(<span class="string">"username"</span>)</span> != nil &#123;</span><br><span class="line"><span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.set<span class="constructor">Value(<span class="params">self</span>.<span class="params">usernameTextField</span>.<span class="params">text</span>, <span class="params">forKey</span>: <span class="string">"username"</span>)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在用户名没有被保存的情况下，这将把用户名输入框里的值赋值给user defaults里的key值为username的变量。</p>
+<p>在saveLoginTo1Password(_:)方法的下端添加下面的代码：</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.set<span class="constructor">Bool(<span class="params">true</span>, <span class="params">forKey</span>: <span class="string">"has1PassLogin"</span>)</span></span><br><span class="line"><span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.synchronize<span class="literal">()</span></span><br></pre></td></tr></table></figure>
+
+<p>这会更新 has1PassLogin 以便表明该用户已经创建了一个1Password的记录。这是一个简单的方法来避免在1Password库中创建第二次记录。后面，你将在试图保存用户验证信息到1Password之前检 has1PassLogin 。</p>
+<p>现在你需要一个方法为你的APP查看已存储的1Password登录信息。</p>
+<p>在checkLogin(_:password:)上方添加下面的方法：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@IBAction</span> <span class="function"><span class="keyword">func</span> <span class="title">findLoginFrom1Password</span><span class="params">(sender: AnyObject)</span></span> &#123;</span><br><span class="line"><span class="type">MyOnePassword</span>.findLoginForURLString( <span class="string">"TouchMeIn.Login"</span>,</span><br><span class="line">forViewController: <span class="keyword">self</span>,</span><br><span class="line">sender: sender,</span><br><span class="line">completion: &#123; (loginDict : [<span class="type">NSObject</span>: <span class="type">AnyObject</span>]!, error : <span class="type">NSError!</span>) -&gt; <span class="type">Void</span> <span class="keyword">in</span></span><br><span class="line"><span class="comment">// 1.</span></span><br><span class="line"><span class="keyword">if</span> loginDict == <span class="literal">nil</span> &#123;</span><br><span class="line"><span class="keyword">if</span> (<span class="type">Int32</span>)(error.code) != <span class="type">AppExtensionErrorCodeCancelledByUser</span> &#123;</span><br><span class="line"><span class="built_in">println</span>(<span class="string">"Error invoking 1Password App Extension for find login: \(error)"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 2.</span></span><br><span class="line"><span class="keyword">if</span> <span class="type">NSUserDefaults</span>.standardUserDefaults().objectForKey(<span class="string">"username"</span>) == <span class="literal">nil</span> &#123;</span><br><span class="line"><span class="type">NSUserDefaults</span>.standardUserDefaults().setValue(loginDict[<span class="type">AppExtensionUsernameKey</span>],</span><br><span class="line">forKey: <span class="string">"username"</span>)</span><br><span class="line"><span class="type">NSUserDefaults</span>.standardUserDefaults().synchronize()</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 3.</span></span><br><span class="line"><span class="keyword">var</span> foundUsername = loginDict[<span class="string">"username"</span>] <span class="keyword">as</span> <span class="type">String</span></span><br><span class="line"><span class="keyword">var</span> foundPassword = loginDict[<span class="string">"password"</span>] <span class="keyword">as</span> <span class="type">String</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">self</span>.checkLogin(foundUsername, password: foundPassword) &#123;</span><br><span class="line"><span class="keyword">self</span>.performSegueWithIdentifier(<span class="string">"dismissLogin"</span>, sender: <span class="keyword">self</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line"><span class="keyword">var</span> alert = <span class="type">UIAlertView</span>()</span><br><span class="line">alert.title = <span class="string">"Error"</span></span><br><span class="line">alert.message = <span class="string">"The info in 1Password is incorrect"</span></span><br><span class="line">alert.addButtonWithTitle(<span class="string">"Darn!"</span>)</span><br><span class="line">alert.show()</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个方法使用 1Password的findLoginForURLString(_:forViewController:sender:completion:)方法来查看传进来URLString值对应的库中的记录，在这个例子里就是TouchMeIn.Login；然后查找成功后会运行completion block，里面包含了返回的字典。</p>
+<p>进一步解析代码如下：</p>
+<ul>
+<li><p>如果 loginDict 是 nil ，那就是出错, 你将根据提供的NSError console里打印错误信息，然后return。？？？？</p>
+</li>
+<li><p>现在你检查了用户名是否保存在了NSUserDefaultsIf里。如果没有，则根据1Password的返回值保存用户名。</p>
+</li>
+<li><p>把得到的值传递给 checkLogin(_:password:)方法。如果登录信息跟Keychain里存储的信息匹配，则关闭登录界面。否则，如果不匹配，给用户展示一个提示框。</p>
+</li>
+</ul>
+<p>现在你将通过调用saveLoginTo1Password(<em>:)方法或者findLoginFrom1Password(</em>:)方法结束canUse1Password(<em>:)方法的实现。如果第一次运行则调用saveLoginTo1Password(</em>:)方法，如 has1PassLogin变量表明该用户曾经有过保存的登录信息，则调用findLoginFrom1Password(_:)方法。</p>
+<p>利用下面的代码替换canUse1Password的实现：</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@IBAction func can<span class="constructor">Use1Password(<span class="params">sender</span>: AnyObject)</span> &#123;</span><br><span class="line"><span class="keyword">if</span> <span class="module-access"><span class="module"><span class="identifier">NSUserDefaults</span>.</span></span>standard<span class="constructor">UserDefaults()</span>.object<span class="constructor">ForKey(<span class="string">"has1PassLogin"</span>)</span> != nil &#123;</span><br><span class="line">self.find<span class="constructor">LoginFrom1Password(<span class="params">self</span>)</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">self.save<span class="constructor">LoginTo1Password(<span class="params">self</span>)</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>编译并运行。点击1Password按钮来保存你的登录信息。1Password的icon会出现在Action表单，点击展开扩展，扩展的视图会模态地出现。你可以用系统密码登录，或者如果使用的是真机，则可使用Touch ID。1Password然后会展示你的APP的记录，使用你先前设置好的标识符。</p>
+<p>你将会看到如下展示的界面。默认情况下1Password会生成一个密码。在这个测试当中，确保输入的验证信息跟先前用的Keychain的登录信息一样。 等到那个结束后，点击Done按钮，最后一张截图展示了稍后编辑记录时你会看到的-它有库名、URL以及当创建记录时你提供的笔记。  </p>
+<p>现在你已经存储了登录，随后点击1Password的按钮会获取库的验证信息，而且当这个登录信息跟Keychain里的匹配时会允许登录。试着再次登录你将会看到如下界面：  </p>
+<p>好了-你现在已经完成了1Password扩展支持- 一个强大的方法来增1Password用户的登录体验。</p>
+<p><strong>接下来做什么？</strong></p>
+<p>你可以在这里<a href="http://cdn5.raywenderlich.com/wp-content/uploads/2015/01/TouchMeInCD.final_1.zip" target="_blank" rel="noopener">下载教程的完整示例应</a>。</p>
+<p>这个教程里你所创建的LoginViewController为任何需要管理用户登录信息的APP提供了一个出发点。</p>
+<p>你也可以添加一个新的view controller，或者改变已有的LoginViewController来允许用户时不时地改变他们的密码。这里Touch ID不是必须的，因为用户的生理信息可能在整个生命周期中都不会改变多少! 但是，你可以新建一个方法来更新Keychain然后相应的更新1Password；你应该在接受用户更新密码之前促使用户输入当前的密码。</p>
+<blockquote>
+<p>原文地址：<a href="http://www.cocoachina.com/ios/20150313/11241.html" target="_blank" rel="noopener">http://www.cocoachina.com/ios/20150313/11241.html</a></p>
+</blockquote>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2016/03/07/随笔 - ios隐藏系统状态栏/" data-toggle="tooltip" data-placement="top" title="ios隐藏系统状态栏">&larr; Previous Post</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=iOS用户信息安全：Keychain、Touch ID以及1Password&body=Hi,I found this website and thought you might like it http://yoursite-url/2016/03/04/iOS用户信息安全：Keychain、Touch ID以及1Password/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+<!-- gitalk start -->
+<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+<div id="gitalk-container"></div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+<script src="/js/comment/gitalk.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: '',
+    id: 'Fri Mar 04 2016 19:16:31 GMT+0800', // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    perPage: 10 ,
+    pagerDirection: 'last',
+    createIssueManually: false ,
+    language: 'en'
+  });
+  gitalk.render('gitalk-container');
+
+  var gtFolded = () => {
+    setTimeout(function() {
+      let markdownBody = document.getElementsByClassName("markdown-body");
+      let list = Array.from(markdownBody);
+      list.forEach(item => {
+        if (item.clientHeight > 250) {
+          item.classList.add('gt-comment-body-folded');
+          item.style.maxHeight = '250px';
+          item.title = 'Click to Expand';
+          item.onclick = function() {
+            item.classList.remove('gt-comment-body-folded');
+            item.style.maxHeight = '';
+            item.title = '';
+            item.onclick = null;
+          };
+        }
+      })
+    }, 800);
+  }
+</script>
+
+<!-- gitalk end -->
+
+
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="nav">none</ol>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#安全" title="安全">安全</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+	<!-- Footer (contains ThemeColor、viewer) -->
+	<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/jerodji">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+            <li>
+              <a target="_blank" href="http://weibo.com/吉久东">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          吉久东
+          2020
+          <!-- <br>
+          Theme by
+          <a href="http://beantech.org" target="_blank" rel="noopener">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a href="https://v-vincen.life/" target="_blank" rel="noopener">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe> -->
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="/js/hux-blog.min.js"></script>
+
+<!-- catalog -->
+<script type="text/javascript" async="true" src="/js/catalog.js?v=1.0.0"></script>
+
+<!-- totop(rocket) -->
+<script type="text/javascript" async="true" src="/js/totop.js?v=1.0.0"></script>
+
+<!-- Busuanzi JavaScript -->
+<script type="text/javascript" async="true" src="/js/busuanzi.pure.mini.js"></script>
+
+
+  <!-- Scroll start -->
+  <script type="text/javascript" src="/js/scroll.js"></script>
+  <!-- Scroll end -->
+
+
+
+  <!-- ThemeColor start -->
+  <script type="text/javascript" src="/js/themecolor.js"></script>
+  <!-- ThemeColor end -->
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  <script type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+  <script type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){ hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if($('#tag_cloud').length !== 0){ async("http://yoursite-url/js/jquery.tagcloud.js",function(){ $.fn.tagcloud.defaults = { //size: {start: 1, end: 1, unit: 'em'}, color: {start:
+'#bbbbee', end: '#0085a1'}, }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+	<!-- Search -->
+	
+	<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/ziploader.js"></script>
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+	
+
+	<!-- Image to hack wechat -->
+	<!-- <img src="http://yoursite-url/img/icon_wechat.png" width="0" height="0" /> -->
+	<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

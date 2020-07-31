@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-xxxxxx-xx');
+  </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+  <script type="text/javascript">
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+
+  <!-- Baidu Push -->
+  
+  <script>
+    (function() {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc" />
+  <meta name="baidu-site-verification" content="PpzM9WxOJU" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="jerod blog" />
+  <meta name="keyword" content="jijiudong,jerod,jerodji,iOS,js,IT  blog,Blog" />
+  <link rel="shortcut icon" href="/img/avatar/roguerabbit.jpg" />
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/beantech.min.css" />
+
+  <!-- Pygments Highlight CSS -->
+  
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
+
+
+  
+  <!-- wave start -->
+  <link rel="stylesheet" href="/css/wave.css" />
+  <!-- wave end -->
+  
+
+  
+  <!-- top start (article top hot config) -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <!-- top end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+  <!-- viewer start (Picture preview) -->
+  <link rel="stylesheet" href="/css/viewer.min.css" />
+  <!-- viewer end -->
+  
+
+  
+  <!-- Search start -->
+  <link rel="stylesheet" href="/css/search.css" />
+  <!-- Search end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/themecolor.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+
+  
+  <!-- gitalk start -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+  <link rel="stylesheet" href="/css/gitalk.css" />
+  <!-- gitalk end -->
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2016/04/08/封装framework/">
+  <title>
+    
+    iOS封装Framework - either thin | or die
+    
+  </title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+<body ontouchstart="" class="body--home">
+	<!-- ThemeColor -->
+	
+	<!-- ThemeColor -->
+<!-- <div class="toggle" onclick="document.body.classList.toggle('body--dark')">Switch Color</div> -->
+
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons bright-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+
+	
+
+	<!-- Gitter -->
+	
+	<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+	
+
+	<!-- Navigation (contains search)-->
+	<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">吉久东的博客</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          
+
+          
+          
+
+          
+          <li>
+            <a href="/archive/">Archives</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/categories/">Categories</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/tags/">Tags</a>
+          </li>
+          
+          
+
+          
+          <li><a class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+
+<script>
+  // Drop Bootstarp low-performance Navbar
+  // Use customize navbar with high-quality material design animation
+  // in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+	<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    header.intro-header {
+       /*post*/
+        background-image: url('');
+      
+    }
+
+    
+      #signature {/*signature*/
+        background-image: url('/img/signature/jerod-white.png');
+      }
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#framework" title="framework">framework</a>
+              
+            </div>
+            <h1>iOS封装Framework</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by 吉久东 on
+              2016-04-08
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">9</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">2.3k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+	<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h1 id="第一篇-iOS封装Framework"><a href="#第一篇-iOS封装Framework" class="headerlink" title="第一篇 iOS封装Framework"></a>第一篇 iOS封装Framework</h1><p>如果我们希望与别人共享某些函数，却又不愿意暴露实现的细节，怎么办呢？<br>这时候可以将我们的代码封装成framework，对外提供接口而不暴露实现；<br>不仅如此，将代码整合成framework还有很多其他的好处，这里就不一一列举。</p>
+<p>下面就来看看如何打包成 framework 吧。</p>
+<p>1、 创建工程</p>
+<hr>
+<p>通过OS X &gt; Framework&amp;Library &gt; Bundle 创建工程：</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151819_doJd_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6hq63oj30kh0c13z8.jpg" alt="img"></a><a href="http://static.oschina.net/uploads/space/2016/0408/171418_LYtb_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6hbeo2j30gb075dgq.jpg" alt="img"></a></p>
+<p>2、添加 Headers</p>
+<hr>
+<p>在 Build Phases 中添加 Headers：</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151820_4qcV_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6qxyozj30oj094jsg.jpg" alt="img"></a></p>
+<p>Headers 展开后是这样的：</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151820_Zbwv_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6omibyj30oq0gnq41.jpg" alt="img"></a></p>
+<p>3、添加项目代码</p>
+<hr>
+<p>将需要封装打包的文件加入项目中，这里最好用 copy 的方式加入：</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151820_q84F_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6n77w8j308p0bkabe.jpg" alt="img"></a></p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151820_pe6f_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6malpgj30kh0c13z8.jpg" alt="img"></a></p>
+<p>4、合并头文件</p>
+<hr>
+<p>为了方便别人使用 framework，最好创建一个头文件,并且在头文件下包含你所有想要公开的类，如此，当别人使用你的 framework 时只需要导入这一个头文件就可以了。</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151821_b2T1_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6p6uw9j30fx04v759.jpg" alt="img"></a></p>
+<p>5、公开类</p>
+<hr>
+<p>当代码加入了项目后，所有的 .h 文件都会自动出现在 Headers  的 Project 下面，然后，我们将需要公开的类拖到 Public 下面。</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151821_qu2a_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6o6hdwj30d20cudgt.jpg" alt="img"></a></p>
+<p>这里需要注意：Private 仍然是公开的而不是私有的，不要被它的名字误导了，私有类保留在 Project 下就好。</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151821_OGLm_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6kyk03j30bh0b6q3q.jpg" alt="img"></a></p>
+<p>6、更改一些设置：</p>
+<hr>
+<p>6.1  info.plist &gt; Bundle OS Type code = FMWK</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151822_HP7Z_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6jktxuj30ga08k75m.jpg" alt="img"></a></p>
+<p>6.2  Build Settings &gt; Base SDK = Latest iOS，选择最新的</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6h5z6sj30kh0c13z8.jpg" alt="img"></p>
+<p>6.3  Build Settings &gt; Linking :</p>
+<ul>
+<li>Dead Code Stripping       = NO;</li>
+<li>Link With Standard Libraries = NO;</li>
+<li>Mach-O Type            = Static Library.</li>
+</ul>
+<p>对于Mach-O Type可能有两种情况:（1）选择 Static Library 打出来的是静态库;（2）选择 Relocatable Object File 打出来是动态库。</p>
+<p>这里建议使用静态库，动态库在提交 AppStore 审核的时候貌似会被拒；但是网上看了一些资料说动态库也是可以的，不过会有一些机审的规则需要注意下，比如不要把x86/i386的包和arm架构的包lipo在一起，就单纯使用真机包。（关于这个没有测试过，也不知道是不是真的，如果有朋友测试过的希望告知下，谢谢！）</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6i2adwj30h80a7dh0.jpg" alt="img"></p>
+<p>6.4  Build Settings &gt; Packaging &gt; Wrapper Extension = framework.</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151823_8s5E_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6q113xj30hm0ftacg.jpg" alt="img"></a></p>
+<p>7、修改输出路径</p>
+<hr>
+<p>7.1  为了方便找到运行后生成的framework，我们提前在项目目录下创建一个目录 build，用来存放运行后生成的文件；</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151823_zXr5_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6jxcb0j30as03a74j.jpg" alt="img"></a></p>
+<p>7.2  然后，需要修改下输出路径：</p>
+<p>Build Settings &gt; Per-configuration Build Products Path = $(SRCROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151823_yfG5_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6qhtjfj30mx05sgmn.jpg" alt="img"></a></p>
+<p>8、编译</p>
+<hr>
+<p>8.1  选择 Generic iOS Device, 编译；</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151823_yZ8L_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6nprbsj30cx059t9r.jpg" alt="img"></a></p>
+<p>8.2  选择模拟器，编译。</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151824_mjJz_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6j0wbfj30ee0aiwh2.jpg" alt="img"></a></p>
+<p>8.3  编译成功后，会在 build 下产生2个文件夹，一个是 device 编译生成的，一个是 simulator 编译生成的，他们里面存放着对应的 framework。</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151824_7qsP_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6lsurjj30ax03udfz.jpg" alt="img"></a></p>
+<p>9、合并</p>
+<hr>
+<p>此时，已经有了适用于设备和模拟器的2个framework，接下来，需要将他们合并，使其同时适用于设备与模拟器。</p>
+<p>9.1  这里合并的并不是2个framework，而是各自的二进制文件，如下图中的 JJFramework;</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151824_QdzC_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6ld7x3j30lv08kgnk.jpg" alt="img"></a></p>
+<p>9.2  那么如何合并呢？首先，打开终端，cd 到 build 文件夹；然后输入命令：</p>
+<p>lipo -create 设备二进制文件 模拟器二进制文件 -output 合成文件的名字 ;</p>
+<p>注意：（1）注意空格。（2）合成后的文件名字需要和合成前的名字一样，否则使用framework时会报错。</p>
+<p>如上图，合并2个 JJFramework 输入如下命令：</p>
+<p>lipo -create Debug-iphoneos/JJFramework.framework/JJFramework Debug-iphonesimulator/JJFramework.framework/JJFramework -output JJFramework。</p>
+<p>build 文件夹下的 JJFramework 就是合成后的二进制文件了。</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151824_4BRe_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6ki7wlj30kj0ed760.jpg" alt="img"></a></p>
+<p>9.3  将设备或模拟器运行生成的framework移出来，用合成的二进制文件替换原本二进制文件：</p>
+<p><a href="http://static.oschina.net/uploads/space/2016/0408/151825_Zfdd_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6hcjf4j30ke0eawfa.jpg" alt="img"></a>     <a href="http://static.oschina.net/uploads/space/2016/0408/151825_kuWa_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6porcqj309s03uwen.jpg" alt="img"></a></p>
+<p>10、删除 info.plist</p>
+<hr>
+<p>到这里就基本上大功告成了。<br>另外，如果framework中没有用到过 info.plist，可以将其删除以免发生冲突。（我就遇到过一次这坑爹的情况）<br><a href="http://static.oschina.net/uploads/space/2016/0408/151825_qBOD_2519676.png" target="_blank" rel="noopener"><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e6rha5aj30d504tmy0.jpg" alt="img"></a></p>
+<p>OK, framework打包完成。</p>
+<p>其实封装 framework 有很多种方法，以上只是其中一种；而且应该还有更简单的方法，有时间的话，后续会补上。</p>
+<h1 id="第二篇-使用bundle管理资源"><a href="#第二篇-使用bundle管理资源" class="headerlink" title="第二篇 使用bundle管理资源"></a>第二篇 使用bundle管理资源</h1><p>上一篇通过 Bundle 创建 framework，这一篇直接通过 iOS 的 Framework来实现，更加简单。</p>
+<p>本篇使用的 Xcode 版本为 7.2.1 。</p>
+<p>一、首先，iOS -&gt; Framework&amp;Library -&gt; Cocoa Touch Framework 创建工程。</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e97hyhdj30ct04mjs0.jpg" alt="img"></p>
+<p>工程的名字要与你所期望的 SDK 名字一样。这里以 ExpeSDK 作为项目名。</p>
+<p>二、工程创建完成后，删除自带的  ExpeSDK.h 和 ExpeSDKTests.m 文件，因为用不到的，移到废纸篓。</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e95l99kj307906djrv.jpg" alt="img"></p>
+<p>三、在 Build Settings 中更改一些配置</p>
+<p>3.1 Architectures 默认是 armv7和 arm64。可以增加 armv7s 架构，主要是为了兼容5C，如果不考虑5C的话，可以忽略这一步。</p>
+<p>3.2 更改输出路径：在项目根目录下创建一个build目录，更改如下配置，输出文件就会在build文件下，这一步只是为了方便找到输出文件而已。</p>
+<p>   Per-configuration Build Products Path &gt; $(SRCROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)</p>
+<p>3.3 推荐如下设置：</p>
+<p>   Mach-O Type &gt; Static Library;( 静态库，如果需要提审 Appstore 的话不允许使用动态库的)</p>
+<p>   Dead Code Stripping &gt; NO;(是否消除无效代码)</p>
+<p>   Link With Standard Libraries 默认是YES，如果没有特殊要求的话，默认就可以。</p>
+<p>​                        设为 NO 也是可以打包的，但是使用framework时要配置Other Linker Flags。</p>
+<p>   Enable Bitcode &gt; NO;(支持旧库)</p>
+<p>四、将需要共享的文件copy到工程。这里copy过来的文件是 config.h 和 config.m ；</p>
+<p>五、Build Phases -&gt; Headers :</p>
+<p>将需要共享的头文件拖入 Public,  私有的保留在 Project。</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e9745moj30fy094t90.jpg" alt="img"></p>
+<p>六、编译</p>
+<p>模拟器编译：</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e961z7aj306r019mx3.jpg" alt="img"></p>
+<p>Device 编译：</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e953j81j30710110so.jpg" alt="img"></p>
+<p>七、合并二进制文件</p>
+<p>编译成功后，在build目录下会生成模拟器和设备的framework,合并他们的二进制文件，使framework能够在设备和模拟器上通用;</p>
+<p>device的framework：</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e93jci1j30om0260tg.jpg" alt="img"></p>
+<p>simulator的framework：</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e949m7kj30pv01y0tg.jpg" alt="img"></p>
+<p>7.1 打开终端，cd 到 build 目录:</p>
+<p>cd build文件路径</p>
+<p>7.2 输入合成命令:(lipo -create 设备二进制文件 模拟器二进制文件 -output 合成文件的名字)</p>
+<p>lipo -create Debug-iphoneos/ExpeSDK.framework/ExpeSDK Debug-iphonesimulator/ExpeSDK.framework/ExpeSDK -output ExpeSDK</p>
+<p>合成完毕后，build目录下会生成一个新的二进制文件:</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e97xcdfj30ee02fgly.jpg" alt="img"></p>
+<p>7.3 替换二进制文件</p>
+<p>然后将新的二进制文件替换掉 device framework 中的二进制文件。</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e94ob7lj30bf03eaac.jpg" alt="img"></p>
+<p>移出framework。</p>
+<p>OK，framework制作完成！</p>
+<hr>
+<p>很多时候，我们需要用到图片，xib等等这些资源，就需要 bundle 来管理。</p>
+<p>创建 Bundle 最简单的方法：新建一个文件，命名为 xxx.bundle 就OK 了。</p>
+<p>此处，我新建一个tuxiang.bundle，然后右击显示包内容，放入2张图片 tx_1.jpg  和 tx_2.png 。</p>
+<p>1、新建一个app工程showApp</p>
+<p>2、将上面的 ExpeSDK.framework 和 tuxiang.bundle 加入到项目中，如此，当程序运行时，xcode会自动将 tuxiang.bundle 拷贝到 app mainBundle.</p>
+<p> 在ExpeSDK.framework的config.m中我已经写好了获取tuxiang.bundle中图片的方法，代码如下：</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">UIView</span>*)configUI</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">UIImage</span> * image = [config getPNGImage:<span class="string">@"tx_2"</span>];</span><br><span class="line">    <span class="built_in">UIImageView</span> * imgView = [[<span class="built_in">UIImageView</span> alloc] initWithImage:image];</span><br><span class="line">    imgView.frame = <span class="built_in">CGRectMake</span>(<span class="number">0</span>, <span class="number">20</span>, <span class="number">375</span>, <span class="number">600</span>);</span><br><span class="line">    <span class="keyword">return</span> imgView;</span><br><span class="line">&#125;</span><br><span class="line">+ (<span class="built_in">UIImage</span>*)getPNGImage:(<span class="built_in">NSString</span>*)_image_name</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSBundle</span> * txBundle = [<span class="keyword">self</span> getBundle:<span class="string">@"tuxiang"</span>];</span><br><span class="line">    <span class="built_in">NSString</span> * imgPath = [txBundle pathForResource:_image_name ofType:<span class="string">@"png"</span>];</span><br><span class="line">    <span class="keyword">return</span> [<span class="built_in">UIImage</span> imageWithContentsOfFile:imgPath];</span><br><span class="line">&#125;</span><br><span class="line">+ (<span class="built_in">UIImage</span>*)getJPGImage:(<span class="built_in">NSString</span>*)_image_name</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSBundle</span> * bundle = [<span class="keyword">self</span> getBundle:<span class="string">@"tuxiang"</span>];</span><br><span class="line">    <span class="built_in">NSString</span> * imgPath = [bundle pathForResource:_image_name ofType:<span class="string">@"jpg"</span>];</span><br><span class="line">    <span class="keyword">return</span> [<span class="built_in">UIImage</span> imageWithContentsOfFile:imgPath];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">+ (<span class="built_in">NSBundle</span>*)getBundle:(<span class="built_in">NSString</span>*)_bundle_name</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"mainBundle resourcePath = %@"</span>,[<span class="built_in">NSBundle</span> mainBundle].resourcePath);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 从 mainBundle 获取 tuxiang.bundle */</span></span><br><span class="line">    <span class="comment">// 方法 1</span></span><br><span class="line">    <span class="comment">//    NSString * component = [NSString stringWithFormat:@"%@.bundle",_bundle_name];</span></span><br><span class="line">    <span class="comment">//    NSString * bundlePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:component];</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 方法 2</span></span><br><span class="line">    <span class="built_in">NSString</span> * bundlePath = [[<span class="built_in">NSBundle</span> mainBundle] pathForResource:_bundle_name ofType:<span class="string">@"bundle"</span>];</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">NSBundle</span> * bundle = [<span class="built_in">NSBundle</span> bundleWithPath:bundlePath];</span><br><span class="line">    <span class="keyword">return</span> bundle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="img">)<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>  在config.h文件中提供对外的方法：</p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="name">UIView*</span>)configUI<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="img">)<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>3、在 showApp 中调用 configUI:</p>
+<p>  先导入头文件</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#<span class="keyword">import</span> <span class="string">"ExpeSDK/config.h"</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="img">)<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>  然后在viewDidLoad中调用函数</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (void)viewDidLoad </span><br><span class="line">&#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line">    </span><br><span class="line">   <span class="built_in"> config </span>* ObjCon = [[config alloc] init];</span><br><span class="line">    [self.view addSubview:[ObjCon configUI]];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="img">)<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>4、运行：</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5e96ojjgj306x0bzq7x.jpg" alt="img">  </p>
+<p>的确是预期的效果。</p>
+<h1 id="第三篇-在工程中直接制作framework"><a href="#第三篇-在工程中直接制作framework" class="headerlink" title="第三篇 在工程中直接制作framework"></a>第三篇 在工程中直接制作framework</h1><p>如果我们写了一个工程，可以直接在工程中制作 framework.</p>
+<p>1、建立工程,工程名 showLog</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb7mgkvj30kd0eftae.jpg" alt="img"></p>
+<p>2、在 showLog 中新建一个类 LogMessage，在这里写一个函数，最终的目的是打包成framework共享这个函数方法；</p>
+<p>LogMessage.h</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@interface</span> <span class="string">LogMessage :</span> NSObject</span><br><span class="line">+ (<span class="keyword">void</span>)logInfo; <span class="comment">//共享的方法</span></span><br><span class="line"><span class="meta">@end</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="img">)<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>LogMessage.m</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">LogMessage</span></span></span><br><span class="line">+ (<span class="keyword">void</span>)logInfo</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"log info success!"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="img">)<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>3、接下来，在项目中建立 framework</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb4796ej30gq0b6q5r.jpg" alt="img"></p>
+<p>会看到新建工程的界面，选择 Cocoa Touch Framework 。这里起名叫 LogSDK.</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb94somj30kd0e2wg7.jpg" alt="img"></p>
+<p>新的 target 建好以后，可以看到工程中多了1、2块文件，删除原生的 .h 与 .m 文件：</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb8jb1fj30ct0h8tb2.jpg" alt="img"></p>
+<p>4、选择新的target: LogSDK，General &gt; Deployment Info &gt; Deployment Target 选择最低；</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb9gn8hj30om0bjjsp.jpg" alt="img"></p>
+<p>按照下图修改配置：</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb6m7ryj30ok0c2q4x.jpg" alt="img"></p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb73om4j30o30b0gnh.jpg" alt="img"></p>
+<p>5、定位到 LogSDK &gt; Build Phases，将 .m 文件拖到 Compile Sources, 将需要公开的 .h 文件拖到Headers &gt; Pulic,需要私有的拖到Headers &gt; Project: </p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb5makfj30v80jvn0w.jpg" alt="img"></p>
+<p>6、更改输出路径:</p>
+<p>在项目文件下新建 build 目录</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb6cae7j30ba040dg0.jpg" alt="img"></p>
+<p>LogSDK &gt; Build Settings &gt; Build Locations :</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb8483jj30qt05uabk.jpg" alt="img"></p>
+<p>更改上图中的配置如下:</p>
+<p>$(SRCROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)</p>
+<p>7、编译：</p>
+<p>需要先选定到 LogSDK：</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gh5eb9xfu6j308b03amxg.jpg" alt="img"></p>
+<p>然后分别进行模拟器和 Device 的编译；</p>
+<p>8、编译成功后，按照上一篇的第7步合并。</p>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2016/07/13/ipa重签名/" data-toggle="tooltip" data-placement="top" title="ipa重签名">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/2016/03/07/随笔 - ios隐藏系统状态栏/" data-toggle="tooltip" data-placement="top" title="ios隐藏系统状态栏">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=iOS封装Framework&body=Hi,I found this website and thought you might like it http://yoursite-url/2016/04/08/封装framework/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+<!-- gitalk start -->
+<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+<div id="gitalk-container"></div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+<script src="/js/comment/gitalk.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: '',
+    id: 'Fri Apr 08 2016 19:02:13 GMT+0800', // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    perPage: 10 ,
+    pagerDirection: 'last',
+    createIssueManually: false ,
+    language: 'en'
+  });
+  gitalk.render('gitalk-container');
+
+  var gtFolded = () => {
+    setTimeout(function() {
+      let markdownBody = document.getElementsByClassName("markdown-body");
+      let list = Array.from(markdownBody);
+      list.forEach(item => {
+        if (item.clientHeight > 250) {
+          item.classList.add('gt-comment-body-folded');
+          item.style.maxHeight = '250px';
+          item.title = 'Click to Expand';
+          item.onclick = function() {
+            item.classList.remove('gt-comment-body-folded');
+            item.style.maxHeight = '';
+            item.title = '';
+            item.onclick = null;
+          };
+        }
+      })
+    }, 800);
+  }
+</script>
+
+<!-- gitalk end -->
+
+
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#第一篇-iOS封装Framework"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">第一篇 iOS封装Framework</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#第二篇-使用bundle管理资源"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">第二篇 使用bundle管理资源</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#第三篇-在工程中直接制作framework"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">第三篇 在工程中直接制作framework</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#framework" title="framework">framework</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+	<!-- Footer (contains ThemeColor、viewer) -->
+	<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/jerodji">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+            <li>
+              <a target="_blank" href="http://weibo.com/吉久东">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          吉久东
+          2020
+          <!-- <br>
+          Theme by
+          <a href="http://beantech.org" target="_blank" rel="noopener">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a href="https://v-vincen.life/" target="_blank" rel="noopener">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe> -->
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="/js/hux-blog.min.js"></script>
+
+<!-- catalog -->
+<script type="text/javascript" async="true" src="/js/catalog.js?v=1.0.0"></script>
+
+<!-- totop(rocket) -->
+<script type="text/javascript" async="true" src="/js/totop.js?v=1.0.0"></script>
+
+<!-- Busuanzi JavaScript -->
+<script type="text/javascript" async="true" src="/js/busuanzi.pure.mini.js"></script>
+
+
+  <!-- Scroll start -->
+  <script type="text/javascript" src="/js/scroll.js"></script>
+  <!-- Scroll end -->
+
+
+
+  <!-- ThemeColor start -->
+  <script type="text/javascript" src="/js/themecolor.js"></script>
+  <!-- ThemeColor end -->
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  <script type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+  <script type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){ hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if($('#tag_cloud').length !== 0){ async("http://yoursite-url/js/jquery.tagcloud.js",function(){ $.fn.tagcloud.defaults = { //size: {start: 1, end: 1, unit: 'em'}, color: {start:
+'#bbbbee', end: '#0085a1'}, }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+	<!-- Search -->
+	
+	<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/ziploader.js"></script>
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+	
+
+	<!-- Image to hack wechat -->
+	<!-- <img src="http://yoursite-url/img/icon_wechat.png" width="0" height="0" /> -->
+	<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
