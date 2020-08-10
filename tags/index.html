@@ -200,14 +200,14 @@
 
           
           <li>
-            <a href="/archive/">Archives</a>
+            <a href="/about/">About</a>
           </li>
           
           
 
           
           <li>
-            <a href="/about/">About</a>
+            <a href="/archive/">Archives</a>
           </li>
           
           
@@ -237,9 +237,9 @@
   <!-- /.container -->
 </nav>
 <!-- progress -->
-<!-- <div id="progress">
+<div id="progress">
   <div class="line" style="width: 0%;"></div>
-</div> -->
+</div>
 
 
 <script>
@@ -357,15 +357,21 @@
         
         <a href="#ES6" title="ES6" rel="2">ES6</a>
         
-        <a href="#链接器" title="链接器" rel="1">链接器</a>
-        
         <a href="#git" title="git" rel="1">git</a>
+        
+        <a href="#JS" title="JS" rel="1">JS</a>
+        
+        <a href="#WebView" title="WebView" rel="1">WebView</a>
+        
+        <a href="#链接器" title="链接器" rel="1">链接器</a>
         
         <a href="#证书" title="证书" rel="3">证书</a>
         
+        <a href="#安全" title="安全" rel="1">安全</a>
+        
         <a href="#runtime" title="runtime" rel="1">runtime</a>
         
-        <a href="#安全" title="安全" rel="1">安全</a>
+        <a href="#KVO" title="KVO" rel="1">KVO</a>
         
         <a href="#framework" title="framework" rel="2">framework</a>
         
@@ -377,13 +383,9 @@
         
         <a href="#破解" title="破解" rel="1">破解</a>
         
-        <a href="#JS" title="JS" rel="1">JS</a>
-        
-        <a href="#WebView" title="WebView" rel="1">WebView</a>
+        <a href="#多线程" title="多线程" rel="2">多线程</a>
         
         <a href="#Swift" title="Swift" rel="1">Swift</a>
-        
-        <a href="#多线程" title="多线程" rel="2">多线程</a>
         
       </div>
 
@@ -393,6 +395,21 @@
         <span class="fa fa-tag listing-seperator" id="OC">
           <span class="tag-text">OC</span>
         </span>
+        
+        <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+        <div class="post-preview">
+          <a href="/2016/09/04/OC中的nullable、__nullable、_Nullable/">
+            <h2 class="post-title">
+              OC中的nullable、__nullable、_Nullable
+            </h2>
+            
+          </a>
+          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </div>
+        <hr>
         
         <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
@@ -414,9 +431,9 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/2016/09/04/OC中的nullable、__nullable、_Nullable/">
+          <a href="/2019/08/13/iOS WebView 与 JS 交互封装/">
             <h2 class="post-title">
-              OC中的nullable、__nullable、_Nullable
+              iOS WebView 与 JS 交互封装
             </h2>
             
           </a>
@@ -489,21 +506,6 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/2019/08/13/iOS WebView 与 JS 交互封装/">
-            <h2 class="post-title">
-              iOS WebView 与 JS 交互封装
-            </h2>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
           <a href="/2016/09/19/随笔 - dispatch_source_t 用作定时器/">
             <h2 class="post-title">
               dispatch_source_t 用作定时器
@@ -526,21 +528,6 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/2019/05/15/ES6-字符串拓展的方法/">
-            <h2 class="post-title">
-              ES6-字符串拓展的方法
-            </h2>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
           <a href="/2019/05/14/ES6 - let 与 const/">
             <h2 class="post-title">
               ES6 - let 与 const
@@ -551,21 +538,14 @@
         </div>
         <hr>
         
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="链接器">
-          <span class="tag-text">链接器</span>
-        </span>
-        
         <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/2016/07/28/Other Linker Flags/">
+          <a href="/2019/05/15/ES6-字符串拓展的方法/">
             <h2 class="post-title">
-              Other Linker Flags 链接器
+              ES6-字符串拓展的方法
             </h2>
             
           </a>
@@ -588,6 +568,72 @@
           <a href="/2020/01/21/git使用/">
             <h2 class="post-title">
               git使用
+            </h2>
+            
+          </a>
+          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </div>
+        <hr>
+        
+      </div>
+      
+      <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="JS">
+          <span class="tag-text">JS</span>
+        </span>
+        
+        <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+        <div class="post-preview">
+          <a href="/2019/08/13/iOS WebView 与 JS 交互封装/">
+            <h2 class="post-title">
+              iOS WebView 与 JS 交互封装
+            </h2>
+            
+          </a>
+          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </div>
+        <hr>
+        
+      </div>
+      
+      <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="WebView">
+          <span class="tag-text">WebView</span>
+        </span>
+        
+        <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+        <div class="post-preview">
+          <a href="/2019/08/13/iOS WebView 与 JS 交互封装/">
+            <h2 class="post-title">
+              iOS WebView 与 JS 交互封装
+            </h2>
+            
+          </a>
+          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </div>
+        <hr>
+        
+      </div>
+      
+      <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="链接器">
+          <span class="tag-text">链接器</span>
+        </span>
+        
+        <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+        <div class="post-preview">
+          <a href="/2016/07/28/Other Linker Flags/">
+            <h2 class="post-title">
+              Other Linker Flags 链接器
             </h2>
             
           </a>
@@ -622,21 +668,6 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/2020/01/15/苹果开发者账号申请-政府组织类（2020）/">
-            <h2 class="post-title">
-              苹果开发者账号申请-政府/组织类（2020）
-            </h2>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
           <a href="/2020/01/15/苹果开发者账号申请-公司/">
             <h2 class="post-title">
               苹果开发者账号申请-公司
@@ -647,21 +678,14 @@
         </div>
         <hr>
         
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="runtime">
-          <span class="tag-text">runtime</span>
-        </span>
-        
         <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/2018/03/17/runtime获取对象属性字典/">
+          <a href="/2020/01/15/苹果开发者账号申请-政府组织类（2020）/">
             <h2 class="post-title">
-              runtime获取对象属性字典
+              苹果开发者账号申请-政府/组织类（2020）
             </h2>
             
           </a>
@@ -694,6 +718,50 @@
       </div>
       
       <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="runtime">
+          <span class="tag-text">runtime</span>
+        </span>
+        
+        <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+        <div class="post-preview">
+          <a href="/2018/03/17/runtime获取对象属性字典/">
+            <h2 class="post-title">
+              runtime获取对象属性字典
+            </h2>
+            
+          </a>
+          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </div>
+        <hr>
+        
+      </div>
+      
+      <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="KVO">
+          <span class="tag-text">KVO</span>
+        </span>
+        
+        <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+        <div class="post-preview">
+          <a href="/2020/08/10/基于系统派生类自定义KVO/">
+            <h2 class="post-title">
+              基于系统派生类自定义KVO
+            </h2>
+            
+          </a>
+          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+        </div>
+        <hr>
+        
+      </div>
+      
+      <div class="one-tag-list">
         <span class="fa fa-tag listing-seperator" id="framework">
           <span class="tag-text">framework</span>
         </span>
@@ -703,9 +771,9 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/2016/04/08/封装framework/">
+          <a href="/2016/08/04/利用 Framework 进行动态更新/">
             <h2 class="post-title">
-              iOS封装Framework
+              利用 Framework 进行动态更新
             </h2>
             
           </a>
@@ -718,9 +786,9 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/2016/08/04/利用 Framework 进行动态更新/">
+          <a href="/2016/04/08/封装framework/">
             <h2 class="post-title">
-              利用 Framework 进行动态更新
+              iOS封装Framework
             </h2>
             
           </a>
@@ -819,8 +887,8 @@
       </div>
       
       <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="JS">
-          <span class="tag-text">JS</span>
+        <span class="fa fa-tag listing-seperator" id="多线程">
+          <span class="tag-text">多线程</span>
         </span>
         
         <!-- <li class="listing-item">
@@ -828,9 +896,9 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/2019/08/13/iOS WebView 与 JS 交互封装/">
+          <a href="/2016/09/19/随笔 - dispatch_source_t 用作定时器/">
             <h2 class="post-title">
-              iOS WebView 与 JS 交互封装
+              dispatch_source_t 用作定时器
             </h2>
             
           </a>
@@ -838,21 +906,14 @@
         </div>
         <hr>
         
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="WebView">
-          <span class="tag-text">WebView</span>
-        </span>
-        
         <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/2019/08/13/iOS WebView 与 JS 交互封装/">
+          <a href="/2018/05/04/随笔 - 网络请求顺序执行,顺序回调/">
             <h2 class="post-title">
-              iOS WebView 与 JS 交互封装
+              随笔 - 网络请求顺序执行,顺序回调
             </h2>
             
           </a>
@@ -875,43 +936,6 @@
           <a href="/2018/05/04/随笔 - 网络请求顺序执行,顺序回调/">
             <h2 class="post-title">
               随笔 - 网络请求顺序执行,顺序回调
-            </h2>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="多线程">
-          <span class="tag-text">多线程</span>
-        </span>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/2018/05/04/随笔 - 网络请求顺序执行,顺序回调/">
-            <h2 class="post-title">
-              随笔 - 网络请求顺序执行,顺序回调
-            </h2>
-            
-          </a>
-          <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-        </div>
-        <hr>
-        
-        <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-        <div class="post-preview">
-          <a href="/2016/09/19/随笔 - dispatch_source_t 用作定时器/">
-            <h2 class="post-title">
-              dispatch_source_t 用作定时器
             </h2>
             
           </a>
